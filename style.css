@@ -1,6 +1,6 @@
 /* Logo styling */
 .nav-logo {
-    height: 80px; /* You can adjust this size */
+    height: 80px; 
     width: auto;
 }
 
@@ -64,9 +64,9 @@ h2 {
     color: #6D6875;
 }
 
-/* Increase font size for the unordered list in the About section */
+
 #about ul {
-    font-size: 1.2em; /* Adjust the size as needed */
+    font-size: 1.2em; 
 }
 
 /* Styling for product section */
@@ -79,15 +79,14 @@ h2 {
 
 .product {
     text-align: center;
-    flex: 0 0 200px; /* Adjust based on your design preferences */
+    flex: 0 0 200px; 
     margin: 10px;
-    /* Removed background color and border */
-    padding: 10px; /* Add padding for spacing */
-    transition: transform 0.2s; /* Smooth hover effect */
+    padding: 10px; 
+    transition: transform 0.2s; 
 }
 
 .product:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05); 
 }
 
 .product h3 {
@@ -136,6 +135,6 @@ footer {
 
 /* Adjusting the font size for the unordered list in the About Us section */
 ul {
-    font-size: 1.5em; /* Increase font size */
-    line-height: 1.6; /* Improve readability */
+    font-size: 1.5em; 
+    line-height: 1.6;
 }
