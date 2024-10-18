@@ -1,65 +1,107 @@
-
-body{
-    color: #FEF9F2;
+/* styles.css */
+body {
+    color: #333333;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color:#789DBC ;}
-
-nav{
-justify-content: space-between;
-align-items: center;
-background-color: #FFE3E3;
-padding: 10px;
+    background-color: #F8EDEB;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FDE2E4;
+    padding: 10px 20px;
+}
+
 img {
-height: 50px;
-width: auto;
-float: left;
-}
-.yarn{
-width: auto; 
-height: 200px;
-}
-.hook{
-width: auto; 
-height: 200px;
-}
-.fiber{
-width: auto; 
-height: 200px;
-}
-ul{
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color: #FFE3E3;
+    height: 50px;
+    width: auto;
+    float: left;
 }
 
-li{float: right;}
-
-a{
-display: block;
-color: white;
-padding: 20px;
-text-decoration: none;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-header{
+li {
+    margin-left: 20px;
+}
+
+a {
+    display: block;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #FFCAD4;
+    border-radius: 5px;
+}
+
+header {
     text-align: center;
-    background-color: #789DBC;
-    color: white;
+    background-color: #FEC5BB;
+    color: #333;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #6D6875;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.product {
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    max-width: 250px;
+}
+
+.product img {
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    border: solid 2px #FFB3C1;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
     padding: 20px;
-}
-section{
-    text-align: left;
-
-}
-footer{
-   
-    text-align: center;
-    padding: 10px;
     background-color: #333;
     color: white;
 }
