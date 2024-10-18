@@ -1,6 +1,6 @@
 /* Logo styling */
 .nav-logo {
-    height: 80px; /* You can adjust this size */
+    height: 100px; 
     width: auto;
 }
 
@@ -40,13 +40,34 @@ a:hover {
     background-color: #FFCAD4;
     border-radius: 5px;
 }
-
+/*header styling*/
 header {
     text-align: center;
-    background-color: #FEC5BB;
-    color: #333;
-    padding: 40px 20px;
+    background: url('/img/crochet-knitting.gif') no-repeat center center; 
+    background-size: cover; 
+    color: #d1cdcd;
+    padding: 80px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 400px; 
 }
+
+header h1, header p {
+    position: relative;
+    z-index: 2; 
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+
 
 h1 {
     font-size: 3em;
@@ -64,9 +85,9 @@ h2 {
     color: #6D6875;
 }
 
-/* Increase font size for the unordered list in the About section */
+
 #about ul {
-    font-size: 1.2em; /* Adjust the size as needed */
+    font-size: 1.2em; 
 }
 
 /* Styling for product section */
@@ -79,15 +100,14 @@ h2 {
 
 .product {
     text-align: center;
-    flex: 0 0 200px; /* Adjust based on your design preferences */
+    flex: 0 0 200px; 
     margin: 10px;
-    /* Removed background color and border */
-    padding: 10px; /* Add padding for spacing */
-    transition: transform 0.2s; /* Smooth hover effect */
+    padding: 10px; 
+    transition: transform 0.2s; 
 }
 
 .product:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05); 
 }
 
 .product h3 {
@@ -136,6 +156,19 @@ footer {
 
 /* Adjusting the font size for the unordered list in the About Us section */
 ul {
-    font-size: 1.5em; /* Increase font size */
-    line-height: 1.6; /* Improve readability */
+    font-size: 1.5em; 
+    line-height: 1.6;
 }
+
+/* Remove default margin and padding for body and html */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure nav, header, and footer stretch across the entire page */
+nav, header, footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
