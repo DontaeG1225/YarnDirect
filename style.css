@@ -81,9 +81,7 @@ h2 {
     text-align: center;
     flex: 0 0 200px; /* Adjust based on your design preferences */
     margin: 10px;
-    background-color: #FDE2E4; /* Light background for product cards */
-    border: solid 1px #C9E9D2; /* Border for product cards */
-    border-radius: 10px; /* Rounded corners */
+    /* Removed background color and border */
     padding: 10px; /* Add padding for spacing */
     transition: transform 0.2s; /* Smooth hover effect */
 }
@@ -93,7 +91,7 @@ h2 {
 }
 
 .product h3 {
-    font-size: 1.5em; /* Larger font size for product names */
+    font-size: 1.5em; 
     margin-bottom: 10px;
     color: #333;
 }
@@ -101,9 +99,9 @@ h2 {
 .product img {
     height: 200px; 
     width: 100%; 
-    border-radius: 10px; /* Consistent rounded corners */
-    border: solid 2px #C9E9D2; /* Consistent border */
-    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 10px; 
+    border: solid 2px #C9E9D2; 
+    object-fit: cover; 
 }
 
 /* Table styling */
