@@ -1,11 +1,11 @@
-/*  logo styling */
+/* Logo styling */
 .nav-logo {
     height: 80px; /* You can adjust this size */
     width: auto;
 }
 
-.body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+.body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Basic styling for the navigation bar */
@@ -79,12 +79,21 @@ h2 {
 
 .product {
     text-align: center;
-    flex: 0 0 200px; 
+    flex: 0 0 200px; /* Adjust based on your design preferences */
     margin: 10px;
+    background-color: #FDE2E4; /* Light background for product cards */
+    border: solid 1px #C9E9D2; /* Border for product cards */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Add padding for spacing */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .product h3 {
-    font-size: 1.2em;
+    font-size: 1.5em; /* Larger font size for product names */
     margin-bottom: 10px;
     color: #333;
 }
@@ -92,12 +101,12 @@ h2 {
 .product img {
     height: 200px; 
     width: 100%; 
-    border-radius: 10px;
-    border: solid 2px #C9E9D2;
-    object-fit: cover;
- }
+    border-radius: 10px; /* Consistent rounded corners */
+    border: solid 2px #C9E9D2; /* Consistent border */
+    object-fit: cover; /* Maintain aspect ratio */
+}
 
-/*Table styling*/
+/* Table styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -125,4 +134,10 @@ footer {
     padding: 20px;
     background-color: #333;
     color: white;
+}
+
+/* Adjusting the font size for the unordered list in the About Us section */
+ul {
+    font-size: 1.5em; /* Increase font size */
+    line-height: 1.6; /* Improve readability */
 }
