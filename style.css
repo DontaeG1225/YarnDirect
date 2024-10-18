@@ -138,3 +138,16 @@ ul {
     font-size: 1.5em; 
     line-height: 1.6;
 }
+
+/* Remove default margin and padding for body and html */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure nav, header, and footer stretch across the entire page */
+nav, header, footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
