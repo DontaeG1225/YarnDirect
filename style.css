@@ -1,7 +1,11 @@
-/* Make the logo bigger */
+/*  logo styling */
 .nav-logo {
     height: 80px; /* You can adjust this size */
     width: auto;
+}
+
+.body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 /* Basic styling for the navigation bar */
@@ -60,6 +64,11 @@ h2 {
     color: #6D6875;
 }
 
+/* Increase font size for the unordered list in the About section */
+#about ul {
+    font-size: 1.2em; /* Adjust the size as needed */
+}
+
 /* Styling for product section */
 .product-grid {
     display: flex;
@@ -109,7 +118,6 @@ th {
 tr:nth-child(even) {
     background-color: #FDE2E4; 
 }
-
 
 /* Footer styling */
 footer {
