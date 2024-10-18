@@ -4,8 +4,8 @@
     width: auto;
 }
 
-.body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body {
+    margin: 0;
 }
 
 /* Basic styling for the navigation bar */
@@ -41,12 +41,28 @@ a:hover {
     border-radius: 5px;
 }
 
-header {
-    text-align: center;
-    background-color: #FEC5BB;
-    color: #333;
-    padding: 40px 20px;
+.hero-image{background-image: url(img/Yarn\ header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 682px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.hero-text{color: #ffffff;
+    text-align: center;}
+
+.hero-text h1{font-size: 100px;
+    font-family: 'satisfy'; margin: 0;}
+
+.hero-text p{font-size: 40px;
+    font-family: 'quicksand'; 
+    margin: 0; 
+    font-weight: 600;
 }
+
+.hero-text #home p{font-size: 20px; padding-top: 60px;}
 
 h1 {
     font-size: 3em;
@@ -60,13 +76,35 @@ p {
 
 h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     color: #6D6875;
+    font-family: 'satisfy';
+}
+
+#about {
+    font-family: 'quicksand medium';
 }
 
 /* Increase font size for the unordered list in the About section */
 #about ul {
     font-size: 1.2em; /* Adjust the size as needed */
+}
+
+#about-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+}
+
+#about-image {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#about-text {
+    max-width: 400px;
 }
 
 /* Styling for product section */
@@ -84,6 +122,10 @@ h2 {
     /* Removed background color and border */
     padding: 10px; /* Add padding for spacing */
     transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.product h3{
+    font-family: 'quicksand medium';
 }
 
 .product:hover {
