@@ -63,16 +63,15 @@ h2 {
 /* Styling for product section */
 .product-grid {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center; /* Center products horizontally */
+    flex-wrap: wrap; /* Allow wrapping to new lines if necessary */
+    gap: 20px; /* Space between products */
 }
 
 .product {
     text-align: center;
-    flex: 1;
-    margin: 10px;
-    max-width: 250px; /* Set a max width to avoid stretching */
+    flex: 0 0 200px; /* Set a fixed width for each product */
+    margin: 10px; /* Margin around each product */
 }
 
 .product h3 {
@@ -83,10 +82,10 @@ h2 {
 
 .product img {
     height: 200px; /* Set a fixed height for all images */
-    width: auto; /* Keep the width auto to maintain aspect ratio */
+    width: 100%; /* Make width 100% to fill the product container */
     border-radius: 10px;
     border: solid 2px #C9E9D2;
-    object-fit: cover; /* This will ensure all images fit within the specified height and width */
+    object-fit: cover; /* Ensures images fill the container while maintaining aspect ratio */
 }
 
 /* Footer styling */
