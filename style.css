@@ -23,6 +23,7 @@ ul {
     margin: 0;
     padding: 0;
     display: flex;
+    color: #7fd798;
 }
 
 li {
@@ -92,6 +93,7 @@ h3 {
     font-family: 'quicksand medium';
     margin-left: 40px; margin-right: 40px;
     margin-top: 150px;
+    color: #333;
 }
 
 /* Increase font size for the unordered list in the About section */
