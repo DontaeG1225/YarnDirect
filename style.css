@@ -6,6 +6,7 @@
 
 body {
     margin: 0;
+    background-color: #FEF9F2;
 }
 
 /* Basic styling for the navigation bar */
@@ -34,6 +35,7 @@ a {
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
+    font-family: 'quicksand';
 }
 
 a:hover {
@@ -62,7 +64,7 @@ a:hover {
     font-weight: 600;
 }
 
-.hero-text #home p{font-size: 20px; padding-top: 60px;}
+.hero-text #home p{font-size: 20px; padding-top: 100px; max-width: 1200px;}
 
 h1 {
     font-size: 3em;
@@ -76,13 +78,15 @@ p {
 
 h2 {
     text-align: center;
-    font-size: 3em;
-    color: #6D6875;
+    font-size: 4em;
+    color: #789DBC;
     font-family: 'satisfy';
 }
 
 #about {
     font-family: 'quicksand medium';
+    margin-left: 40px; margin-right: 40px;
+    margin-top: 150px;
 }
 
 /* Increase font size for the unordered list in the About section */
@@ -94,17 +98,41 @@ h2 {
     display: flex;
     align-items: center;
     padding: 20px;
+    margin-bottom: 50px;
+}
+
+#about-div {
     margin: auto;
+    display: flex;
+    align-items: center;
 }
 
 #about-image {
     width: 300px;
     height: auto;
-    margin-right: 20px;
+    margin-right: 100px;
+    transform: rotate(-15deg);
 }
 
 #about-text {
-    max-width: 400px;
+    max-width: 800px;
+    font-size: 26px;
+}
+
+#graph-images {
+    display: flex;
+    align-items: center;
+}
+
+#crochet-search-interests {
+    height: auto;
+    width: 800px;
+    margin-right: 80px;
+}
+
+#crochet-related-queries {
+    height: auto;
+    width: 500px;
 }
 
 /* Styling for product section */
@@ -166,6 +194,25 @@ th {
 
 tr:nth-child(even) {
     background-color: #FDE2E4; 
+}
+
+#contact-info {
+    margin: auto;
+    text-align: center;
+    font-family: 'quicksand semibold';
+}
+
+button {
+    border-radius: 10px;
+    background-color: #FFE3E3;
+    height: auto;
+}
+
+#phone-symbol {
+    height: 30px;
+    width: auto;
+    position: relative;
+    top: 10px; left: 5px;
 }
 
 /* Footer styling */
