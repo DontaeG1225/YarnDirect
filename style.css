@@ -1,6 +1,6 @@
 /* Logo styling */
 .nav-logo {
-    height: 80px; /* You can adjust this size */
+    height: 100px; 
     width: auto;
 }
 
@@ -67,6 +67,7 @@ a:hover {
 
 .hero-text #home p{font-size: 20px; padding-top: 100px; max-width: 1200px;}
 
+
 h1 {
     font-size: 3em;
     margin-bottom: 10px;
@@ -96,9 +97,9 @@ h3 {
     color: #333;
 }
 
-/* Increase font size for the unordered list in the About section */
+
 #about ul {
-    font-size: 1.2em; /* Adjust the size as needed */
+    font-size: 1.2em; 
 }
 
 #about-box {
@@ -165,7 +166,7 @@ h3 {
 }
 
 .product:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05); 
 }
 
 .product h3 {
@@ -240,6 +241,19 @@ footer {
 
 /* Adjusting the font size for the unordered list in the About Us section */
 ul {
-    font-size: 1.5em; /* Increase font size */
-    line-height: 1.6; /* Improve readability */
+    font-size: 1.5em; 
+    line-height: 1.6;
 }
+
+/* Remove default margin and padding for body and html */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure nav, header, and footer stretch across the entire page */
+nav, header, footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
