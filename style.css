@@ -1,24 +1,16 @@
-/* styles.css */
-body {
-    color: #333333;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F8EDEB;
+/* Make the logo bigger */
+.nav-logo {
+    height: 80px; 
+    width: auto;
 }
 
+/* Basic styling for the navigation bar */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #FDE2E4;
     padding: 10px 20px;
-}
-
-img {
-    height: 50px;
-    width: auto;
-    float: left;
 }
 
 ul {
@@ -68,38 +60,37 @@ h2 {
     color: #6D6875;
 }
 
-/* Product Section Styles */
+/* Styling for product section */
 .product-grid {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .product {
     text-align: center;
     flex: 1;
     margin: 10px;
-    width: auto;
-    height: 200px;
+    max-width: 250px; 
+}
+
+.product h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 .product img {
-    height: 100px;
+    height: auto;
     width: 100%;
     max-width: 200px;
     border-radius: 10px;
     border: solid 2px #C9E9D2;
+    object-fit: contain; 
 }
 
-/* Additional Product Styling */
-.product-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin: 40px 0;
-}
-
+/* Footer styling */
 footer {
     text-align: center;
     padding: 20px;
