@@ -1,6 +1,6 @@
 /* Make the logo bigger */
 .nav-logo {
-    height: 80px; 
+    height: 80px; /* You can adjust this size */
     width: auto;
 }
 
@@ -72,7 +72,7 @@ h2 {
     text-align: center;
     flex: 1;
     margin: 10px;
-    max-width: 250px; 
+    max-width: 250px; /* Set a max width to avoid stretching */
 }
 
 .product h3 {
@@ -82,12 +82,11 @@ h2 {
 }
 
 .product img {
-    height: auto;
-    width: 100%;
-    max-width: 200px;
+    height: 200px; /* Set a fixed height for all images */
+    width: auto; /* Keep the width auto to maintain aspect ratio */
     border-radius: 10px;
     border: solid 2px #C9E9D2;
-    object-fit: contain; 
+    object-fit: cover; /* This will ensure all images fit within the specified height and width */
 }
 
 /* Footer styling */
