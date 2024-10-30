@@ -257,3 +257,43 @@ nav, header, footer {
     box-sizing: border-box;
 }
 
+
+
+/*Products page*/
+
+/* Base styling for product images */
+.yarn-image {
+    position: relative;
+    width: 200px; /* Adjust as needed */
+    height: auto;
+}
+
+.yarn-image img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+/* Default image visible, hover image hidden */
+.yarn-image .default-image {
+    opacity: 1;
+}
+
+.yarn-image .hover-image {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* On hover, switch to hover image */
+.yarn-image:hover .default-image {
+    opacity: 0;
+}
+
+.yarn-image:hover .hover-image {
+    opacity: 1;
+}
+
+
+
