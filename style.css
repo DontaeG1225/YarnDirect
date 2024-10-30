@@ -303,65 +303,80 @@ body, h1, h2, h3, p {
 
 
 
-/* Premium Yarn*/
+/* Chunky Yarn*/
+
+.nav-logo {
+    height: 50px;
+    margin: 10px;
+}
 
 .product-detail {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
 }
 
-.yarn-display {
-    width: 60%;
+/* .yarn-display {
+    width: 400px;
+    height: 400px;
     position: relative;
-}
+} */
 
 .yarn-image {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    transition: opacity 0.3s ease;
-    opacity: 0;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    display: none;
 }
 
 .yarn-image.default {
-    opacity: 1;
+    display: block;
+}
+
+/* .color-options {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+} */
+
+.yarn-display {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .color-options {
     width: 30%;
+    margin: 0 auto;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust columns as needed */
+    gap: 10px;
 }
 
 .color {
     width: 50px;
     height: 50px;
-    margin: 10px;
-    display: inline-block;
     border-radius: 50%;
     cursor: pointer;
 }
 
-/* Color hover effects */
-#color1 { background-color: #ff69b4; /* Bright Pink */ }
-#color2 { background-color: #ffd700; /* Cotton Candy */ }
-#color3 { background-color: #87ceeb; /* Sky Blue */ }
-
-#color1:hover ~ .yarn-display .default,
-#color2:hover ~ .yarn-display .default,
-#color3:hover ~ .yarn-display .default {
-    opacity: 0;
-}
-
-#color2:hover ~ .yarn-display .color2,
-#color3:hover ~ .yarn-display .color3 {
-    opacity: 1;
-}
-
-#color1:hover ~ .yarn-display .default {
-    opacity: 1;
-}
-
-
-
-
+/* Color-Specific Backgrounds for Selectors */
+#color-black { background-color: #000; }
+#color-bright-pink { background-color: #ff69b4; }
+#color-bubblegum { background-color: #ff85a1; }
+#color-cotton-candy { background-color: #ffb7d5; }
+#color-cream { background-color: #fffdd0; }
+#color-light-blue { background-color: #add8e6; }
+#color-light-purple { background-color: #dda0dd; }
+#color-light-yellow { background-color: #ffffe0; }
+#color-mango { background-color: #ff8243; }
+#color-mint { background-color: #98ff98; }
+#color-seaside { background-color: #5f9ea0; }
+#color-sunshine { background-color: #ffdf00; }
+#color-tang { background-color: #ffcc00; }
+#color-very-berry { background-color: #a52a2a; }
+#color-white { background-color: #ffffff; }
