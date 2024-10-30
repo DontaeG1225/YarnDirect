@@ -261,6 +261,43 @@ nav, header, footer {
 
 /*Products page*/
 
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+.product-section {
+    margin: 20px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    width: 180px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
 
 
 
