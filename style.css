@@ -261,39 +261,70 @@ nav, header, footer {
 
 /*Products page*/
 
-/* Base styling for product images */
-.yarn-image {
+
+
+
+
+
+/* Premium Yarn*/
+
+.product-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.yarn-display {
+    width: 60%;
     position: relative;
-    width: 200px; /* Adjust as needed */
-    height: auto;
 }
 
-.yarn-image img {
-    width: 100%;
-    height: auto;
-    transition: opacity 0.3s ease;
-}
-
-/* Default image visible, hover image hidden */
-.yarn-image .default-image {
-    opacity: 1;
-}
-
-.yarn-image .hover-image {
-    opacity: 0;
+.yarn-image {
     position: absolute;
     top: 0;
     left: 0;
-}
-
-/* On hover, switch to hover image */
-.yarn-image:hover .default-image {
+    width: 100%;
+    transition: opacity 0.3s ease;
     opacity: 0;
 }
 
-.yarn-image:hover .hover-image {
+.yarn-image.default {
     opacity: 1;
 }
+
+.color-options {
+    width: 30%;
+}
+
+.color {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Color hover effects */
+#color1 { background-color: #ff69b4; /* Bright Pink */ }
+#color2 { background-color: #ffd700; /* Cotton Candy */ }
+#color3 { background-color: #87ceeb; /* Sky Blue */ }
+
+#color1:hover ~ .yarn-display .default,
+#color2:hover ~ .yarn-display .default,
+#color3:hover ~ .yarn-display .default {
+    opacity: 0;
+}
+
+#color2:hover ~ .yarn-display .color2,
+#color3:hover ~ .yarn-display .color3 {
+    opacity: 1;
+}
+
+#color1:hover ~ .yarn-display .default {
+    opacity: 1;
+}
+
 
 
 
