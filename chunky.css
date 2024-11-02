@@ -107,16 +107,6 @@ input[type="radio"] {
     cursor: pointer;
 }
 
-.add-to-cart {
-    background-color: #4CAF50;
-    color: white;
-    margin-right: 10px;
-}
-
-.more-info {
-    background-color: #2196F3;
-    color: white;
-}
 
 footer {
     display: flex;
@@ -185,22 +175,25 @@ footer {
     text-align: center; /* Center the heading */
 }
 
-.product-details ul {
-    list-style-type: none; /* Remove default bullet points */
-    padding: 0; /* Remove padding */
+/* Table Styling */
+.product-details table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Remove default spacing */
+    margin-top: 15px; /* Space above the table */
+    border: none; /* Remove table borders */
 }
 
-.product-details li {
-    margin: 10px 0; /* Add space between list items */
-    font-size: 16px; /* Set font size */
-    color: #333; /* Dark gray color for text */
-    line-height: 1.5; /* Increase line height for readability */
-    background-color: #f9f9f9; /* Light gray background for list items */
-    padding: 10px; /* Padding inside list items */
-    border-radius: 5px; /* Slightly rounded corners for list items */
+.product-details td {
+    padding: 10px; /* Padding inside table cells */
+    background-color: #f9f9f9; /* Light gray background for cells */
+    border: none; /* Remove borders from table cells */
     transition: background-color 0.3s; /* Smooth background transition */
 }
 
-.product-details li:hover {
+.product-details td:nth-child(1) {
+    font-weight: bold; /* Make the first column bold */
+}
+
+.product-details td:hover {
     background-color: #ffcad4; /* Change background on hover */
 }
