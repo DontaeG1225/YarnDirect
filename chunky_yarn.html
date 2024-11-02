@@ -18,43 +18,64 @@
 
 <main>
     <section class="product-detail">
-        <!-- Yarn Display with High-Resolution Images -->
+        <!-- Yarn Display with Color-Specific Images -->
         <div class="yarn-display">
+            <input type="radio" name="color" id="color-black" checked>
+            <input type="radio" name="color" id="color-bright-pink">
+            <input type="radio" name="color" id="color-bubblegum">
+
+
             <img src="img/yarn/chunkyyarn/Black Chunky yarn.png" alt="Black Yarn" class="yarn-image default">
-            <img src="img/yarn/chunkyyarn/Bright pink Chunky yarn.png" alt="Bright Pink Yarn" class="yarn-image">
-            <img src="img/yarn/chunkyyarn/bubblegum Chunky yarn.png" alt="Bubblegum Yarn" class="yarn-image">
-            <img src="img/yarn/chunkyyarn/Cotton Candy Chunky yarn.png" alt="Cotton Candy Yarn" class="yarn-image">
-            <img src="img/yarn/chunkyyarn/cream Chunky yarn.png" alt="Cream Yarn" class="yarn-image">
-            <img src="img/yarn/chunkyyarn/light blue Chuncky yarn.png" alt="Light Blue Yarn" class="yarn-image">
-            <img src="img/yarn/chunkyyarn/light purple Chuncky yarn.png" alt="Light Purple Yarn" class="yarn-image">
-            <img src="img/yarn/chunkyyarn/light yellow Chuncky yarn.png" alt="Light Yellow Yarn" class="yarn-image">
-            <img src="img/yarn/chunkyyarn/mango Chunky yarn.png" alt="Mango Yarn" class="yarn-image">
-            <img src="img/yarn/chunkyyarn/mint Chunky yarn.png" alt="Mint Yarn" class="yarn-image">
-            <img src="img/yarn/chunkyyarn/seaside Chunky yarn.png" alt="Seaside Yarn" class="yarn-image">
-            <img src="img/yarn/chunkyyarn/sunshine Chunky yarn.png" alt="Sunshine Yarn" class="yarn-image">
-            <img src="img/yarn/chunkyyarn/tang Chunky yarn.png" alt="Tang Yarn" class="yarn-image">
-            <img src="img/yarn/chunkyyarn/very berry Chunky yarn.png" alt="Very Berry Yarn" class="yarn-image">
-            <img src="img/yarn/chunkyyarn/white Chunky yarn.png" alt="White Yarn" class="yarn-image">
+            <img src="img/yarn/chunkyyarn/Bright pink Chunky yarn.png" alt="Bright Pink Yarn" class="yarn-image color-bright-pink">
+            <img src="img/yarn/chunkyyarn/bubblegum Chunky yarn.png" alt="Bubblegum Yarn" class="yarn-image color-bubblegum">
+            <img src="img/yarn/chunkyyarn/Cotton Candy Chunky yarn.png" alt="Cotton Candy Yarn" class="yarn-image color-cotton-candy">
+            <img src="img/yarn/chunkyyarn/cream Chunky yarn.png" alt="Cream Yarn" class="yarn-image color-cream">
+            <img src="img/yarn/chunkyyarn/light blue Chuncky yarn.png" alt="Light Blue Yarn" class="yarn-image color-light-blue">
+            <img src="img/yarn/chunkyyarn/light purple Chuncky yarn.png" alt="Light Purple Yarn" class="yarn-image color-light-purple">
+            <img src="img/yarn/chunkyyarn/light yellow Chuncky yarn.png" alt="Light Yellow Yarn" class="yarn-image color-light-yellow">
+            <img src="img/yarn/chunkyyarn/mango Chunky yarn.png" alt="Mango Yarn" class="yarn-image color-mango">
+            <img src="img/yarn/chunkyyarn/mint Chunky yarn.png" alt="Mint Yarn" class="yarn-image color-mint">
+            <img src="img/yarn/chunkyyarn/seaside Chunky yarn.png" alt="Seaside Yarn" class="yarn-image color-seaside">
+            <img src="img/yarn/chunkyyarn/sunshine Chunky yarn.png" alt="Sunshine Yarn" class="yarn-image color-sunshine">
+            <img src="img/yarn/chunkyyarn/tang Chunky yarn.png" alt="Tang Yarn" class="yarn-image color-tang">
+            <img src="img/yarn/chunkyyarn/very berry Chunky yarn.png" alt="Very Berry Yarn" class="yarn-image color-very-berry">
+            <img src="img/yarn/chunkyyarn/white Chunky yarn.png" alt="White Yarn" class="yarn-image color-white">
         </div>
 
         <!-- Color Options Selector -->
         <div class="color-options">
             <h3>Choose a Color</h3>
-            <div class="color" id="color-black"></div>
-            <div class="color" id="color-bright-pink"></div>
-            <div class="color" id="color-bubblegum"></div>
-            <div class="color" id="color-cotton-candy"></div>
-            <div class="color" id="color-cream"></div>
-            <div class="color" id="color-light-blue"></div>
-            <div class="color" id="color-light-purple"></div>
-            <div class="color" id="color-light-yellow"></div>
-            <div class="color" id="color-mango"></div>
-            <div class="color" id="color-mint"></div>
-            <div class="color" id="color-seaside"></div>
-            <div class="color" id="color-sunshine"></div>
-            <div class="color" id="color-tang"></div>
-            <div class="color" id="color-very-berry"></div>
-            <div class="color" id="color-white"></div>
+            <div class="color-grid">
+                <div class="color" id="color-black"></div>
+                <div class="color" id="color-bright-pink"></div>
+                <div class="color" id="color-bubblegum"></div>
+                <div class="color" id="color-cotton-candy"></div>
+                <div class="color" id="color-cream"></div>
+                <div class="color" id="color-light-blue"></div>
+                <div class="color" id="color-light-purple"></div>
+                <div class="color" id="color-light-yellow"></div>
+                <div class="color" id="color-mango"></div>
+                <div class="color" id="color-mint"></div>
+                <div class="color" id="color-seaside"></div>
+                <div class="color" id="color-sunshine"></div>
+                <div class="color" id="color-tang"></div>
+                <div class="color" id="color-very-berry"></div>
+                <div class="color" id="color-white"></div>
+            </div>
+        </div>
+
+
+
+        <!-- Quantity Selector -->
+        <div class="quantity-selector">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1">
+        </div>
+
+          <!-- Buttons for actions -->
+          <div class="action-buttons">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="more-info">More Info</button>
         </div>
     </section>
 </main>
