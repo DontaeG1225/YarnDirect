@@ -2,13 +2,16 @@
 <html>
 <head>
     <title>Premium Yarn - YarnDirect</title>
+    <link rel="icon" type="image/png" href="img/Yarn Direct Slogan Logo No BG.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chunky.css">
 </head>
 <body>
 
 <nav>
-    <img src="img/Yarn Direct Slogan Logo No BG.png" alt="Logo" class="nav-logo">
+    <a href="home.html"><img src="img/Yarn Direct Slogan Logo No BG.png" alt="Logo" class="nav-logo"></a>
     <ul>
+        <li><a href="home.html">Home</a></li>       
         <li><a href="products.html">Products</a></li>
         <li><a href="aboutus.html">About us</a></li>
         <li><a href="contactus.html">Contact us</a></li>
@@ -23,9 +26,20 @@
             <input type="radio" name="color" id="color-black" checked>
             <input type="radio" name="color" id="color-bright-pink">
             <input type="radio" name="color" id="color-bubblegum">
+            <input type="radio" name="color" id="color-cotton-candy">
+            <input type="radio" name="color" id="color-cream">
+            <input type="radio" name="color" id="color-light-blue">
+            <input type="radio" name="color" id="color-light-purple">
+            <input type="radio" name="color" id="color-light-yellow">
+            <input type="radio" name="color" id="color-mango">
+            <input type="radio" name="color" id="color-mint">
+            <input type="radio" name="color" id="color-seaside">
+            <input type="radio" name="color" id="color-sunshine">
+            <input type="radio" name="color" id="color-tang">
+            <input type="radio" name="color" id="color-very-berry">
+            <input type="radio" name="color" id="color-white">
 
-
-            <img src="img/yarn/chunkyyarn/Black Chunky yarn.png" alt="Black Yarn" class="yarn-image default">
+            <img src="img/yarn/chunkyyarn/Black Chunky yarn.png" alt="Black Yarn" class="yarn-image color-black">
             <img src="img/yarn/chunkyyarn/Bright pink Chunky yarn.png" alt="Bright Pink Yarn" class="yarn-image color-bright-pink">
             <img src="img/yarn/chunkyyarn/bubblegum Chunky yarn.png" alt="Bubblegum Yarn" class="yarn-image color-bubblegum">
             <img src="img/yarn/chunkyyarn/Cotton Candy Chunky yarn.png" alt="Cotton Candy Yarn" class="yarn-image color-cotton-candy">
@@ -46,25 +60,23 @@
         <div class="color-options">
             <h3>Choose a Color</h3>
             <div class="color-grid">
-                <div class="color" id="color-black"></div>
-                <div class="color" id="color-bright-pink"></div>
-                <div class="color" id="color-bubblegum"></div>
-                <div class="color" id="color-cotton-candy"></div>
-                <div class="color" id="color-cream"></div>
-                <div class="color" id="color-light-blue"></div>
-                <div class="color" id="color-light-purple"></div>
-                <div class="color" id="color-light-yellow"></div>
-                <div class="color" id="color-mango"></div>
-                <div class="color" id="color-mint"></div>
-                <div class="color" id="color-seaside"></div>
-                <div class="color" id="color-sunshine"></div>
-                <div class="color" id="color-tang"></div>
-                <div class="color" id="color-very-berry"></div>
-                <div class="color" id="color-white"></div>
+                <label class="color" for="color-black" id="color-black"></label>
+                <label class="color" for="color-bright-pink" id="color-bright-pink"></label>
+                <label class="color" for="color-bubblegum" id="color-bubblegum"></label>
+                <label class="color" for="color-cotton-candy" id="color-cotton-candy"></label>
+                <label class="color" for="color-cream" id="color-cream"></label>
+                <label class="color" for="color-light-blue" id="color-light-blue"></label>
+                <label class="color" for="color-light-purple" id="color-light-purple"></label>
+                <label class="color" for="color-light-yellow" id="color-light-yellow"></label>
+                <label class="color" for="color-mango" id="color-mango"></label>
+                <label class="color" for="color-mint" id="color-mint"></label>
+                <label class="color" for="color-seaside" id="color-seaside"></label>
+                <label class="color" for="color-sunshine" id="color-sunshine"></label>
+                <label class="color" for="color-tang" id="color-tang"></label>
+                <label class="color" for="color-very-berry" id="color-very-berry"></label>
+                <label class="color" for="color-white" id="color-white"></label>
             </div>
         </div>
-
-
 
         <!-- Quantity Selector -->
         <div class="quantity-selector">
@@ -72,8 +84,8 @@
             <input type="number" id="quantity" name="quantity" value="1" min="1">
         </div>
 
-          <!-- Buttons for actions -->
-          <div class="action-buttons">
+        <!-- Buttons for actions -->
+        <div class="action-buttons">
             <button class="add-to-cart">Add to Cart</button>
             <button class="more-info">More Info</button>
         </div>

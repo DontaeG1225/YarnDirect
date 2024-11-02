@@ -1,0 +1,170 @@
+.nav-logo {
+    height: 50px;
+    margin: 10px;
+}
+
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.yarn-display {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.yarn-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    position: absolute;
+    display: none;
+}
+
+/* Display the correct yarn image based on selected color */
+#color-black:checked ~ .yarn-display .color-black,
+#color-bright-pink:checked ~ .yarn-display .color-bright-pink,
+#color-bubblegum:checked ~ .yarn-display .color-bubblegum,
+#color-cotton-candy:checked ~ .yarn-display .color-cotton-candy,
+#color-cream:checked ~ .yarn-display .color-cream,
+#color-light-blue:checked ~ .yarn-display .color-light-blue,
+#color-light-purple:checked ~ .yarn-display .color-light-purple,
+#color-light-yellow:checked ~ .yarn-display .color-light-yellow,
+#color-mango:checked ~ .yarn-display .color-mango,
+#color-mint:checked ~ .yarn-display .color-mint,
+#color-seaside:checked ~ .yarn-display .color-seaside,
+#color-sunshine:checked ~ .yarn-display .color-sunshine,
+#color-tang:checked ~ .yarn-display .color-tang,
+#color-very-berry:checked ~ .yarn-display .color-very-berry,
+#color-white:checked ~ .yarn-display .color-white {
+    display: block;
+}
+
+/* Color options styling */
+.color-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.color {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #ddd;
+}
+
+.color:hover {
+    border-color: #000;
+}
+
+/* Quantity selector styling */
+.quantity-selector {
+    margin-top: 20px;
+}
+
+.quantity-selector label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.quantity-selector input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Button styling */
+.action-buttons {
+    margin-top: 20px;
+}
+
+.add-to-cart,
+.more-info {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    margin-right: 10px;
+}
+
+.more-info {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Color Circle Background Colors */
+#color-black {
+    background-color: black;
+}
+
+#color-bright-pink {
+    background-color: #FF4DFF; /* Bright Pink */
+}
+
+#color-bubblegum {
+    background-color: #FFB2D1; /* Bubblegum */
+}
+
+#color-cotton-candy {
+    background-color: #FF6F61; /* Cotton Candy */
+}
+
+#color-cream {
+    background-color: #FFFDD0; /* Cream */
+}
+
+#color-light-blue {
+    background-color: #ADD8E6; /* Light Blue */
+}
+
+#color-light-purple {
+    background-color: #E6E6FA; /* Light Purple */
+}
+
+#color-light-yellow {
+    background-color: #FFFFE0; /* Light Yellow */
+}
+
+#color-mango {
+    background-color: #FFCC00; /* Mango */
+}
+
+#color-mint {
+    background-color: #98FF98; /* Mint */
+}
+
+#color-seaside {
+    background-color: #87CEEB; /* Seaside */
+}
+
+#color-sunshine {
+    background-color: #FFF700; /* Sunshine */
+}
+
+#color-tang {
+    background-color: #FF6347; /* Tang */
+}
+
+#color-very-berry {
+    background-color: #D5006D; /* Very Berry */
+}
+
+#color-white {
+    background-color: white;
+    border: 2px solid #ddd; /* White circle with border */
+}
