@@ -1,3 +1,4 @@
+/* Basic layout */
 .nav-logo {
     height: 50px;
     margin: 10px;
@@ -22,10 +23,13 @@
     object-fit: cover;
     border-radius: 8px;
     position: absolute;
-    display: none;
+    display: -moz-stack; /* Hide all images by default */
 }
 
-/* Display the correct yarn image based on selected color */
+input[type="radio"] {
+    display: none; /* Hide the radio buttons */
+}
+
 #color-black:checked ~ .yarn-display .color-black,
 #color-bright-pink:checked ~ .yarn-display .color-bright-pink,
 #color-bubblegum:checked ~ .yarn-display .color-bubblegum,
@@ -41,15 +45,22 @@
 #color-tang:checked ~ .yarn-display .color-tang,
 #color-very-berry:checked ~ .yarn-display .color-very-berry,
 #color-white:checked ~ .yarn-display .color-white {
-    display: block;
+    display: block; /* Show the selected image */
 }
 
-/* Color options styling */
+/* Color selector styling */
 .color-options {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-direction: column; /* Stack the color options vertically */
+    align-items: center;
     margin-top: 20px;
+}
+
+.color-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow colors to wrap */
+    gap: 10px; /* Space between colors */
+    max-width: 400px; /* Set a maximum width */
 }
 
 .color {
@@ -107,64 +118,89 @@
     color: white;
 }
 
-/* Color Circle Background Colors */
-#color-black {
-    background-color: black;
+footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    height: 50px;
 }
 
-#color-bright-pink {
-    background-color: #FF4DFF; /* Bright Pink */
+.footer-div {
+    margin: auto;
 }
 
-#color-bubblegum {
-    background-color: #FFB2D1; /* Bubblegum */
+/* Button styling */
+.add-to-cart,
+.more-info {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px; /* Soft edges */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
 }
 
-#color-cotton-candy {
-    background-color: #FF6F61; /* Cotton Candy */
+/* Soft pastel pink for add to cart */
+.add-to-cart {
+    background-color: #ff7f9c; /* Light pastel pink */
+    color: white;
+    margin-right: 10px;
 }
 
-#color-cream {
-    background-color: #FFFDD0; /* Cream */
+.add-to-cart:hover {
+    background-color: #ff5a78; /* Slightly darker pink on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
 }
 
-#color-light-blue {
-    background-color: #ADD8E6; /* Light Blue */
+/* Soft pastel blue for more info */
+.more-info {
+    background-color: #ff9aa2; /* Light pastel blue */
+    color: white;
 }
 
-#color-light-purple {
-    background-color: #E6E6FA; /* Light Purple */
+.more-info:hover {
+    background-color: #ff7d8a; /* Slightly darker blue on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
 }
 
-#color-light-yellow {
-    background-color: #FFFFE0; /* Light Yellow */
+
+/* Product Details Styling */
+.product-details {
+    background-color: #ffffff; /* White background for contrast */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 400px; /* Limit width */
+    margin-top: 20px; /* Space above */
 }
 
-#color-mango {
-    background-color: #FFCC00; /* Mango */
+.product-details h3 {
+    font-size: 24px; /* Larger font size for the heading */
+    margin-bottom: 15px; /* Space below heading */
+    color: #ff7f9c; /* Soft pastel pink color for the heading */
+    text-align: center; /* Center the heading */
 }
 
-#color-mint {
-    background-color: #98FF98; /* Mint */
+.product-details ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
 }
 
-#color-seaside {
-    background-color: #87CEEB; /* Seaside */
+.product-details li {
+    margin: 10px 0; /* Add space between list items */
+    font-size: 16px; /* Set font size */
+    color: #333; /* Dark gray color for text */
+    line-height: 1.5; /* Increase line height for readability */
+    background-color: #f9f9f9; /* Light gray background for list items */
+    padding: 10px; /* Padding inside list items */
+    border-radius: 5px; /* Slightly rounded corners for list items */
+    transition: background-color 0.3s; /* Smooth background transition */
 }
 
-#color-sunshine {
-    background-color: #FFF700; /* Sunshine */
-}
-
-#color-tang {
-    background-color: #FF6347; /* Tang */
-}
-
-#color-very-berry {
-    background-color: #D5006D; /* Very Berry */
-}
-
-#color-white {
-    background-color: white;
-    border: 2px solid #ddd; /* White circle with border */
+.product-details li:hover {
+    background-color: #ffcad4; /* Change background on hover */
 }
