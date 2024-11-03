@@ -193,7 +193,10 @@
     #basix-yarn-page .yarn-slide.basix-pine{animation: slideshow 12s infinite    14s;}
     #basix-yarn-page .yarn-slide.basix-red{animation: slideshow 12s infinite 16s;}
     #basix-yarn-page .yarn-slide.basix-tweed{animation: slideshow 12s infinite 18s;}
-    #basix-yarn-page .yarn-slide.basix-white{animation: slideshow 12s infinite  202s;}
+    #basix-yarn-page .yarn-slide.basix-white{animation: slideshow 12s infinite  20s;}
+
+    /*Stitch yarn*/
+    #stitch-yarn-page .yarn-slide.stitch-brown{animation: slideshow 12s  infinite 0s;}
 
 }
 input[type="radio"] {
@@ -260,19 +263,34 @@ input[type="radio"] {
 #yarn-yellow { background-color: yellow; }
 
 
-.basix-blue { background-color: blue; }
-.basix-charcoal { background-color: #36454f; } /* Dark charcoal */
-.basix-red { background-color: red; }
-.basix-light-blue { background-color: lightblue; }
-.basix-blush { background-color: #f1c2c9; } /* Light blush pink */
-.basix-brown { background-color: #8b4513; } /* Brown */
-.basix-cotton-canday { background-color: #ffbcd9; } /* Cotton candy pink */
-.basix-mid-brown { background-color: #a0522d; } /* Medium brown */
-.basix-mint { background-color: #98ff98; } /* Mint green */
-.basix-pine { background-color: #01796f; } /* Pine green */
-.basix-tweed { background-color: #d2b48c; } /* Tweed tan */
-.basix-white { background-color: white; }
+#basix-blue { background-color: blue; }
+#basix-charcoal { background-color: #36454f; } /* Dark charcoal */
+#basix-red { background-color: red; }
+#basix-light-blue { background-color: lightblue; }
+#basix-blush { background-color: #f1c2c9; } /* Light blush pink */
+#basix-brown { background-color: #8b4513; } /* Brown */
+#basix-cotton-canday { background-color: #ffbcd9; } /* Cotton candy pink */
+#basix-mid-brown { background-color: #a0522d; } /* Medium brown */
+#basix-mint { background-color: #98ff98; } /* Mint green */
+#basix-pine { background-color: #01796f; } /* Pine green */
+#basix-tweed { background-color: #d2b48c; } /* Tweed tan */
+#basix-white { background-color: white; }
 
+
+.stitch-blue { background-color: #0000FF; } /* Blue */
+.stitch-crochoal { background-color: #36454F; } /* Charcoal */
+.stitch-dark-brown { background-color: #654321; } /* Dark Brown */
+.stitch-grape-crush { background-color: #6F2DA8; } /* Grape Crush */
+.stitch-grey { background-color: #808080; } /* Grey */
+.stitch-green { background-color: #008000; } /* Green */
+.stitch-light-green { background-color: #90EE90; } /* Light Green */
+.stitch-light-purple { background-color: #D8BFD8; } /* Light Purple */
+.stitch-marron { background-color: #800000; } /* Maroon */
+.stitch-orange { background-color: #FFA500; } /* Orange */
+.stitch-pink { background-color: #FFC0CB; } /* Pink */
+.stitch-purple { background-color: #800080; } /* Purple */
+.stitch-sand { background-color: #F4A460; } /* Sand */
+.stitch-yellow { background-color: #FFFF00; } /* 
 
 
 /* Hover Effects for Image Change */
@@ -365,38 +383,52 @@ footer {
 }
 
 /* Button styling */
-.add-to-cart,
-.more-info {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 20px; /* Soft edges */
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
-}
 
-/* Soft pastel pink for add to cart */
+/* Styling for Add to Cart button */
 .add-to-cart {
-    background-color: #ff7f9c; /* Light pastel pink */
-    color: white;
-    margin-right: 10px;
+    background-color: #FF6347; /* Tomato red */
+    color: white; /* White text for contrast */
+    padding: 10px 20px; /* Space inside the button */
+    font-size: 16px; /* Text size */
+    font-weight: bold;
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth color and scaling effect */
 }
 
+/* Hover effect for Add to Cart button */
 .add-to-cart:hover {
-    background-color: #ff5a78; /* Slightly darker pink on hover */
-    transform: scale(1.05); /* Slightly increase size on hover */
+    background-color: #FF4500; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scaling */
 }
 
-/* Soft pastel blue for more info */
+/* Styling for quantity selector buttons */
+.quantity-button {
+    background-color: #ddd; /* Light gray background */
+    border: none;
+    color: #333; /* Darker text color */
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.quantity-button:hover {
+    background-color: #ccc; /* Darker gray on hover */
+}
+
+/* Soft pastel blue for more info
 .more-info {
-    background-color: #ff9aa2; /* Light pastel blue */
+    background-color: #ff9aa2; 
     color: white;
 }
 
 .more-info:hover {
-    background-color: #ff7d8a; /* Slightly darker blue on hover */
-    transform: scale(1.05); /* Slightly increase size on hover */
-}
+    background-color: #ff7d8a; 
+    transform: scale(1.05); 
+} */
 
 
 /* Product Details Styling */
