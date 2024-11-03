@@ -141,7 +141,17 @@
     .yarn-slide.color-bright-pink { animation: slideshow 12s infinite; }
     .yarn-slide.color-bubblegum { animation: slideshow 12s infinite; }
     .yarn-slide.color-cotton-candy { animation: slideshow 12s infinite; }
-    /* Add additional colors here as needed */
+    .yarn-slide.color-fuchsia { animation: slideshow 12s infinite; }
+    .yarn-slide.color-lavender { animation: slideshow 12s infinite; }
+    .yarn-slide.color-mint { animation: slideshow 12s infinite; }
+    .yarn-slide.color-pink { animation: slideshow 12s infinite; }
+    .yarn-slide.color-purple { animation: slideshow 12s infinite; }
+    .yarn-slide.color-red { animation: slideshow 12s infinite; }
+    .yarn-slide.color-salmon { animation: slideshow 12s infinite; }
+    .yarn-slide.color-teal { animation: slideshow 12s infinite; }
+    .yarn-slide.color-white { animation: slideshow 12s infinite; }
+    .yarn-slide.color-yellow { animation: slideshow 12s infinite; }
+    
 }
 input[type="radio"] {
     display: none; /* Hide the radio buttons */
@@ -200,7 +210,7 @@ input[type="radio"] {
 #color-yellow { background-color: yellow; }
 
 /* Hover Effects for Image Change */
-.color:hover ~ .yarn-display .yarn-image { display: none; } /* Hide all images on hover */
+/* .color:hover ~ .yarn-display .yarn-image { display: none; } /* Hide all images on hover */
 #color-black:hover ~ .yarn-display .default { display: block; } /* Default image */
 #color-bright-pink:hover ~ .yarn-display .color-bright-pink { display: block; }
 #color-bubblegum:hover ~ .yarn-display .color-bubblegum { display: block; }
@@ -215,7 +225,7 @@ input[type="radio"] {
 #color-sunshine:hover ~ .yarn-display .color-sunshine { display: block; }
 #color-tang:hover ~ .yarn-display .color-tang { display: block; }
 #color-very-berry:hover ~ .yarn-display .color-very-berry { display: block; }
-#color-white:hover ~ .yarn-display .color-white { display: block; }
+#color-white:hover ~ .yarn-display .color-white { display: block; } */
 
 /* Color selector styling */
 .color-options {
