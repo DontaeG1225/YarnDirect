@@ -275,12 +275,22 @@ body, h1, h2, h3, p {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+
+    
 }
 
 .product {
     width: 180px;
     text-align: center;
     transition: transform 0.3s ease;
+
+    text-align: center;
+    flex: 0 0 200px; 
+    margin: 0px;
+   
+    padding: 10px;
+    transition: transform 0.2s; 
+    background-color: #FFE3E3;
 }
 
 .product img {
@@ -295,6 +305,7 @@ body, h1, h2, h3, p {
 }
 
 .product h3 {
+    font-family: 'quicksand medium';
     margin-top: 10px;
     font-size: 1.1em;
 }

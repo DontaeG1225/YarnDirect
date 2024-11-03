@@ -222,22 +222,24 @@ input[type="radio"] {
 #color-tang { background-color: #ffcc00; }
 #color-very-berry { background-color: #a52a2a; }
 #color-white { background-color: #ffffff; }
-#color-blue { background-color: blue; }
-#color-burgundy { background-color: #800020; }
-#color-light-green { background-color: lightgreen; }
-#color-cream { background-color: #f5f5dc; }
-#color-light-blue { background-color: lightblue; }
-#color-lilac { background-color: #c8a2c8; }
-#color-orange { background-color: orange; }
-#color-navy { background-color: navy; }
-#color-peach { background-color: peachpuff; }
-#color-pink { background-color: pink; }
-#color-pumpkin { background-color: #ff7518; }
-#color-purple { background-color: purple; }
-#color-raspberry { background-color: #e30b5d; }
-#color-red { background-color: red; }
-#color-charcoal { background-color: #36454f; }
-#color-yellow { background-color: yellow; }
+
+#yarn-black {background-color: #000}
+#yarn-blue { background-color: blue; }
+#yarn-burgundy { background-color: #800020; }
+#yarn-light-green { background-color: lightgreen; }
+#yarn-cream { background-color: #f5f5dc; }
+#yarn-light-blue { background-color: lightblue; }
+#yarn-lilac { background-color: #c8a2c8; }
+#yarn-orange { background-color: orange; }
+#yarn-navy { background-color: navy; }
+#yarn-peach { background-color: peachpuff; }
+#yarn-pink { background-color: pink; }
+#yarn-pumpkin { background-color: #ff7518; }
+#yarn-purple { background-color: purple; }
+#yarn-raspberry { background-color: #e30b5d; }
+#yarn-red { background-color: red; }
+#yarn-charcoal { background-color: #36454f; }
+#yarn-yellow { background-color: yellow; }
 
 /* Hover Effects for Image Change */
 /* .color:hover ~ .yarn-display .yarn-image { display: none; } /* Hide all images on hover */
@@ -255,7 +257,10 @@ input[type="radio"] {
 #color-sunshine:hover ~ .yarn-display .color-sunshine { display: block; }
 #color-tang:hover ~ .yarn-display .color-tang { display: block; }
 #color-very-berry:hover ~ .yarn-display .color-very-berry { display: block; }
-#color-white:hover ~ .yarn-display .color-white { display: block; } */
+#color-white:hover ~ .yarn-display .color-white { display: block; } 
+
+#yarn-black:hover ~  .yarn-display .default { display: block; }
+#yarn-blue:hover ~  .yarn-display .default { display: block; }
 
 /* Color selector styling */
 .color-options {
