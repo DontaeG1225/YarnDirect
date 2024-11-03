@@ -185,15 +185,15 @@
 
     /*Basix yarn*/
     #basix-yarn-page .yarn-slide.basix-blue{animation: slideshow 12s infinite 0s;}
-    #basix-yarn-page .yarn-slide.basix-blush{animation: slideshow 12s infinite 4s;}
-    #basix-yarn-page .yarn-slide.basix-cotton-candy{animation: slideshow 12s infinite 8s;}
-    #basix-yarn-page .yarn-slide.basix-light-blue{animation: slideshow 12s infinite  10s;}
-    #basix-yarn-page .yarn-slide.basix-mid-brown{animation: slideshow 12s  infinite  12s;}
-    #basix-yarn-page .yarn-slide.basix-mint{animation: slideshow 12s infinite   14s;}
-    #basix-yarn-page .yarn-slide.basix-pine{animation: slideshow 12s infinite    16s;}
-    #basix-yarn-page .yarn-slide.basix-red{animation: slideshow 12s infinite 18s;}
-    #basix-yarn-page .yarn-slide.basix-tweed{animation: slideshow 12s infinite 20s;}
-    #basix-yarn-page .yarn-slide.basix-white{animation: slideshow 12s infinite  22s;}
+    #basix-yarn-page .yarn-slide.basix-blush{animation: slideshow 12s infinite 2s;}
+    #basix-yarn-page .yarn-slide.basix-cotton-candy{animation: slideshow 12s infinite 4s;}
+    #basix-yarn-page .yarn-slide.basix-light-blue{animation: slideshow 12s infinite  8s;}
+    #basix-yarn-page .yarn-slide.basix-mid-brown{animation: slideshow 12s  infinite  10s;}
+    #basix-yarn-page .yarn-slide.basix-mint{animation: slideshow 12s infinite   12s;}
+    #basix-yarn-page .yarn-slide.basix-pine{animation: slideshow 12s infinite    14s;}
+    #basix-yarn-page .yarn-slide.basix-red{animation: slideshow 12s infinite 16s;}
+    #basix-yarn-page .yarn-slide.basix-tweed{animation: slideshow 12s infinite 18s;}
+    #basix-yarn-page .yarn-slide.basix-white{animation: slideshow 12s infinite  202s;}
 
 }
 input[type="radio"] {
