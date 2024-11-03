@@ -182,6 +182,22 @@ input[type="radio"] {
 #color-tang { background-color: #ffcc00; }
 #color-very-berry { background-color: #a52a2a; }
 #color-white { background-color: #ffffff; }
+#color-blue { background-color: blue; }
+#color-burgundy { background-color: #800020; }
+#color-light-green { background-color: lightgreen; }
+#color-cream { background-color: #f5f5dc; }
+#color-light-blue { background-color: lightblue; }
+#color-lilac { background-color: #c8a2c8; }
+#color-orange { background-color: orange; }
+#color-navy { background-color: navy; }
+#color-peach { background-color: peachpuff; }
+#color-pink { background-color: pink; }
+#color-pumpkin { background-color: #ff7518; }
+#color-purple { background-color: purple; }
+#color-raspberry { background-color: #e30b5d; }
+#color-red { background-color: red; }
+#color-charcoal { background-color: #36454f; }
+#color-yellow { background-color: yellow; }
 
 /* Hover Effects for Image Change */
 .color:hover ~ .yarn-display .yarn-image { display: none; } /* Hide all images on hover */
