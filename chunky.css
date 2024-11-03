@@ -197,8 +197,24 @@
 
     /*Stitch yarn*/
     #stitch-yarn-page .yarn-slide.stitch-brown{animation: slideshow 12s  infinite 0s;}
+    #stitch-yarn-page .yarn-slide.stitch-crochoal{animation: slideshow  12s  infinite  2s;}
+    #stitch-yarn-page .yarn-slide.stitch-dark-brown{animation: slideshow 12 s  infinite  4s;}
+    #stitch-yarn-page .yarn-slide.stitch-grape-crush{animation: slideshow  12s  infinite  6s;}
+    #stitch-yarn-page .yarn-slide.stitch-grey{animation: slideshow   12s  infinite  8s;}
+    #stitch-yarn-page .yarn-slide.stitch-green{animation: slideshow   12s  infinite  10s;}
+    #stitch-yarn-page .yarn-slide.stitch-light-green{animation: slideshow   12s  infinite  12s;}
+    #stitch-yarn-page .yarn-slide.stitch-light-purple{animation: slideshow    12s  infinite  14s;}
+    #stitch-yarn-page .yarn-slide.stitch-marron{animation: slideshow  12s  infinite  16s;}
+    #stitch-yarn-page .yarn-slide.stitch-orange{animation: slideshow   12s  infinite  18s;}
+    #stitch-yarn-page .yarn-slide.stitch-pink{animation: slideshow    12s  infinite  20s;}
+    #stitch-yarn-page .yarn-slide.stitch-purple{animation: slideshow   12s  infinite  22s;}
+    #stitch-yarn-page .yarn-slide.stitch-sand{animation: slideshow 12s  infinite  24s;}
+    #stitch-yarn-page .yarn-slide.stitch-yellow{animation: slideshow   12s  infinite  26s;}
+
+    /*Cotton  yarn*/
 
 }
+
 input[type="radio"] {
     display: none; /* Hide the radio buttons */
 }
@@ -403,20 +419,22 @@ footer {
     transform: scale(1.05); /* Slight scaling */
 }
 
-/* Styling for quantity selector buttons */
 .quantity-button {
-    background-color: #ddd; /* Light gray background */
+    background-color: #FFC0CB; /* Light pink background */
     border: none;
-    color: #333; /* Darker text color */
+    color: #fff; /* White text color for contrast */
     padding: 5px 10px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: bold;
     border-radius: 5px;
     margin: 0 5px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
+/* Hover effect for quantity selector buttons */
 .quantity-button:hover {
-    background-color: #ccc; /* Darker gray on hover */
+    background-color: #FF69B4; /* Darker pink on hover */
 }
 
 /* Soft pastel blue for more info
