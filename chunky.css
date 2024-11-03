@@ -118,7 +118,7 @@
 
 /* Animation keyframes */
 @keyframes slideshow {
-     0% { opacity: 1; }
+     /* 0% { opacity: 1; }
     20% { opacity: 1; }
     25% { opacity: 0; }
     45% { opacity: 0; }
@@ -126,7 +126,13 @@
     70% { opacity: 1; }
     75% { opacity: 0; }
     95% { opacity: 0; } 
-    100% { opacity: 1; }
+    100% { opacity: 1; } */
+
+    0% { opacity: 0; }
+    4% { opacity: 1; }
+    16% { opacity: 1; }
+    20% { opacity: 0; }
+    100% { opacity: 0; }
 }
 
 /* Add this style for automatic slideshow effect */
@@ -139,43 +145,57 @@
     /* Animation delay for each slide */
 
     /*Chunky yarn*/
-    .yarn-slide.color-black { animation: slideshow 12s infinite; }
-    .yarn-slide.color-bright-pink { animation: slideshow 12s infinite; }
-    .yarn-slide.color-bubblegum { animation: slideshow 12s infinite; }
-    .yarn-slide.color-cotton-candy { animation: slideshow 12s infinite; }
-    .yarn-slide.color-tang { animation: slideshow 12s infinite; }
-    .yarn-slide.color-lavender { animation: slideshow 12s infinite; }
-    .yarn-slide.color-mint { animation: slideshow 12s infinite; }
-    .yarn-slide.color-light-blue { animation: slideshow 12s infinite; }
-    .yarn-slide.color-light-purple { animation: slideshow 12s infinite; }
-    .yarn-slide.color-light-yellow { animation: slideshow 12s infinite; }
-    .yarn-slide.color-mango { animation: slideshow 12s infinite; }
-    .yarn-slide.color-mint { animation: slideshow 12s infinite; }
-    .yarn-slide.color-white { animation: slideshow 12s infinite; }
-    .yarn-slide.color-yellow { animation: slideshow 12s infinite; }
-    .yarn-slide.color-cream {animation: slideshows 12s infinite;}
-    .yarn-slide.color-seaside {animation: slideshows 12s infinite;}
-    .yarn-slide.color-sunshine {animation: slideshows 12s infinite;}
-    .yarn-slide.color-very-berry{animation: slideshows 12s infinite;}
+    .yarn-slide.color-black { animation: slideshow 12s infinite 0s; }
+    .yarn-slide.color-bright-pink { animation: slideshow 12s infinite 2s; }
+    .yarn-slide.color-bubblegum { animation: slideshow 12s infinite  4s; }
+    .yarn-slide.color-cotton-candy { animation: slideshow 12s infinite  6s; }
+    .yarn-slide.color-tang { animation: slideshow 12s infinite   8s; }
+    .yarn-slide.color-lavender { animation: slideshow 12s infinite   10s; }
+    .yarn-slide.color-mint { animation: slideshow 12s infinite   12s; }
+    .yarn-slide.color-light-blue { animation: slideshow 12s infinite    14s; }
+    .yarn-slide.color-light-purple { animation: slideshow 12s infinite     16s; }
+    .yarn-slide.color-light-yellow { animation: slideshow 12s infinite      18s; }
+    .yarn-slide.color-mango { animation: slideshow 12s infinite        20s; }
+    .yarn-slide.color-mint { animation: slideshow 12s infinite         22s; }
+    .yarn-slide.color-white { animation: slideshow 12s infinite           24s; }
+    .yarn-slide.color-yellow { animation: slideshow 12s infinite             26s; }
+    .yarn-slide.color-cream {animation: slideshow 12s infinite                28s; }
+    .yarn-slide.color-seaside {animation: slideshow 12s infinite                  30s; }
+    .yarn-slide.color-sunshine {animation: slideshow 12s infinite                     32s; }
+    .yarn-slide.color-very-berry{animation: slideshow 12s infinite                         34s; }
 
     /*DK light yarn*/
-    .yarn-slide.yarn-black{animation: slideshows 12s infinite;}
-    .yarn-slide.yarn-blue{animation: slideshows 12s infinite;}
-    .yarn-slide.yarn-burgundy{animation: slideshows 12s infinite;}
-    .yarn-slide.yarn-light-green{animation: slideshows 12s infinite;}
-    .yarn-slide.yarn-cream{animation: slideshows 12s infinite;}
-    .yarn-slide.yarn-light-blue{animation: slideshows 12s infinite;}
-    .yarn-slide.yarn-lilac{animation: slideshows 12s infinite;}
-    .yarn-slide.yarn-orange{animation: slideshows 12s infinite;}
-    .yarn-slide.yarn-navy{animation: slideshows 12s infinite;}
-    .yarn-slide.yarn-pink{animation: slideshows 12s infinite;}
-    .yarn-slide.yarn-purple{animation: slideshows 12s infinite;}
-    .yarn-slide.yarn-red{animation: slideshows 12s infinite;}
-    .yarn-slide.yarn-peach{animation: slideshows 12s infinite;}
-    .yarn-slide.yarn-raspberry{animation: slideshows 12s infinite;}
-    .yarn-slide.yarn-yellow{animation: slideshows 12s infinite;}
-    .yarn-slide.yarn-charcoal{animation: slideshows 12s infinite;}
-    .yarn-slide.yarn-white{animation: slideshows 12s infinite;}
+    .yarn-slide.yarn-black{animation: slideshow 12s infinite 0s;}
+    .yarn-slide.yarn-blue{animation: slideshow 12s infinite  2s;}
+    .yarn-slide.yarn-burgundy{animation: slideshow 12s infinite   4s;}
+    .yarn-slide.yarn-light-green{animation: slideshow 12s infinite    6s;}
+    .yarn-slide.yarn-cream{animation: slideshow 12s infinite      8s;}
+    .yarn-slide.yarn-light-blue{animation: slideshow 12s infinite        10s;} 
+    .yarn-slide.yarn-lilac{animation: slideshow 12s infinite          12s;}
+    .yarn-slide.yarn-orange{animation: slideshow 12s infinite   14s;}
+    .yarn-slide.yarn-navy{animation: slideshow 12s infinite      16s;}
+    .yarn-slide.yarn-pink{animation: slideshow 12s infinite         18s;}
+    .yarn-slide.yarn-purple{animation: slideshow 12s infinite            20s;}
+    .yarn-slide.yarn-red{animation: slideshow 12s infinite                22s;}
+    .yarn-slide.yarn-peach{animation: slideshow 12s infinite                   24s;}
+    .yarn-slide.yarn-raspberry{animation: slideshow 12s infinite                       26s;}
+    .yarn-slide.yarn-yellow{animation: slideshow 12s infinite                           28s;}
+    .yarn-slide.yarn-charcoal{animation: slideshow 12s infinite                               30s;}
+    /* .yarn-slide.yarn-white{animation: slideshow 12s infinite                                      32s;} */
+
+    /*Basix yarn*/
+    .yarn-slide.basix-blue{animation: slideshow 12s infinite 0s;}
+    .yarn-slide.basix-brown{animation: slideshow 12s infinite 2s;}
+    .yarn-slide.basix-blush{animation: slideshow 12s infinite 4s;}
+    .yarn-slide.basix-charcoal{animation: slideshow 12s infinite 6s;}
+    .yarn-slide.basix-cotton-candy{animation: slideshow 12s infinite 8s;}
+    .yarn-slide.basix-light-blue{animation: slideshow 12s infinite  10s;}
+    .yarn-slide.basix-mid-brown{animation: slideshow 12s  infinite  12s;}
+    .yarn-slide.basix-mint{animation: slideshow 12s infinite   14s;}
+    .yarn-slide.basix-pine{animation: slideshow 12s infinite    16s;}
+    .yarn-slide.basix-red{animation: slideshow 12s infinite 18s;}
+    .yarn-slide.basix-tweed{animation: slideshow 12s infinite 20s;}
+    .yarn-slide.basix-white{animation: slideshow 12s infinite  22s;}
 
 }
 input[type="radio"] {
@@ -241,23 +261,21 @@ input[type="radio"] {
 #yarn-charcoal { background-color: #36454f; }
 #yarn-yellow { background-color: yellow; }
 
-.basix-black { background-color: black; }
+
 .basix-blue { background-color: blue; }
-.basix-burgundy { background-color: rgb(79, 15, 15); }
-.basix-light-green { background-color: lightgreen; }
-.basix-cream { background-color: #f5f5dc; }
-.basix-light-blue { background-color: lightblue; }
-.basix-lilac { background-color: #e0bbf1; }
-.basix-orange { background-color: orange; }
-.basix-navy { background-color: navy; }
-.basix-peach { background-color: peach; }
-.basix-pink { background-color: pink; }
-.basix-pumpkin { background-color: #ff7518; }
-.basix-purple { background-color: purple; }
-.basix-raspberry { background-color: #e30b5c; }
+.basix-charcoal { background-color: #36454f; } /* Dark charcoal */
 .basix-red { background-color: red; }
-.basix-charcoal { background-color: #36454f; }
-.basix-yellow { background-color: yellow; }
+.basix-light-blue { background-color: lightblue; }
+.basix-blush { background-color: #f1c2c9; } /* Light blush pink */
+.basix-brown { background-color: #8b4513; } /* Brown */
+.basix-cotton-canday { background-color: #ffbcd9; } /* Cotton candy pink */
+.basix-mid-brown { background-color: #a0522d; } /* Medium brown */
+.basix-mint { background-color: #98ff98; } /* Mint green */
+.basix-pine { background-color: #01796f; } /* Pine green */
+.basix-tweed { background-color: #d2b48c; } /* Tweed tan */
+.basix-white { background-color: white; }
+
+
 
 /* Hover Effects for Image Change */
 /* .color:hover ~ .yarn-display .yarn-image { display: none; } /* Hide all images on hover */
