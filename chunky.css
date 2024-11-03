@@ -212,6 +212,19 @@
     #stitch-yarn-page .yarn-slide.stitch-yellow{animation: slideshow   12s  infinite  26s;}
 
     /*Cotton  yarn*/
+    #cotton-yarn-page .yarn-slide.cotton-black{animation: slideshow  12s  infinite 0s;}
+    #cotton-yarn-page .yarn-slide.cotton-blue-iris{animation: slideshow   12s  infinite  2s;}
+    #cotton-yarn-page .yarn-slide.cotton-blue{animation: slideshow    12s  infinite  4s;}
+    #cotton-yarn-page .yarn-slide.cotton-cotton-candy{animation: slideshow   12s  infinite  6s;}
+    #cotton-yarn-page .yarn-slide.cotton-cream{animation: slideshow    12s  infinite  8s;}
+    #cotton-yarn-page .yarn-slide.cotton-green{animation: slideshow    12s  infinite  10s;}
+    #cotton-yarn-page .yarn-slide.cotton-grey{animation: slideshow    12s  infinite  12s;}
+    #cotton-yarn-page .yarn-slide.cotton-light-purple{animation: slideshow    12s  infinite  14s;}
+    #cotton-yarn-page .yarn-slide.cotton-red{animation: slideshow     12s  infinite  16s;}
+    #cotton-yarn-page .yarn-slide.cotton-sea{animation: slideshow      12s  infinite  18s;}
+    #cotton-yarn-page .yarn-slide.cotton-whiite{animation: slideshow      12s  infinite  20s;}
+    #cotton-yarn-page .yarn-slide.cotton-yellow{animation: slideshow        12s  infinite  22s;}
+    
 
 }
 
@@ -306,8 +319,20 @@ input[type="radio"] {
 .stitch-pink { background-color: #FFC0CB; } /* Pink */
 .stitch-purple { background-color: #800080; } /* Purple */
 .stitch-sand { background-color: #F4A460; } /* Sand */
-.stitch-yellow { background-color: #FFFF00; } /* 
+.stitch-yellow { background-color: #FFFF00; }  
 
+.cotton-black { background-color: #000; }
+.cotton-blue-iris { background-color: #5a5db8; }
+.cotton-blue { background-color: #007FFF; }
+.cotton-cotton-candy { background-color: #FFB7C5; }
+.cotton-cream { background-color: #FFFDD0; }
+.cotton-green { background-color: #3CB371; }
+.cotton-grey { background-color: #D3D3D3; }
+.cotton-light-purple { background-color: #C9A0DC; }
+.cotton-red { background-color: #FF6347; }
+.cotton-sea { background-color: #00CED1; }
+.cotton-whiite { background-color: #FFFFFF; }
+.cotton-yellow { background-color: #FFFF66; }
 
 /* Hover Effects for Image Change */
 /* .color:hover ~ .yarn-display .yarn-image { display: none; } /* Hide all images on hover */
@@ -402,7 +427,7 @@ footer {
 
 /* Styling for Add to Cart button */
 .add-to-cart {
-    background-color: #FF6347; /* Tomato red */
+    background-color: #FF69B4; /* Tomato red */
     color: white; /* White text for contrast */
     padding: 10px 20px; /* Space inside the button */
     font-size: 16px; /* Text size */
@@ -415,7 +440,7 @@ footer {
 
 /* Hover effect for Add to Cart button */
 .add-to-cart:hover {
-    background-color: #FF4500; /* Darker shade on hover */
+    background-color:  #FF69B4; /* Darker shade on hover */
     transform: scale(1.05); /* Slight scaling */
 }
 
