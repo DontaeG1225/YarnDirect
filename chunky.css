@@ -137,21 +137,26 @@
 
 @media (min-width: 400px) {
     /* Animation delay for each slide */
+
+    /*Chunky yarn*/
     .yarn-slide.color-black { animation: slideshow 12s infinite; }
     .yarn-slide.color-bright-pink { animation: slideshow 12s infinite; }
     .yarn-slide.color-bubblegum { animation: slideshow 12s infinite; }
     .yarn-slide.color-cotton-candy { animation: slideshow 12s infinite; }
-    .yarn-slide.color-fuchsia { animation: slideshow 12s infinite; }
+    .yarn-slide.color-tang { animation: slideshow 12s infinite; }
     .yarn-slide.color-lavender { animation: slideshow 12s infinite; }
     .yarn-slide.color-mint { animation: slideshow 12s infinite; }
-    .yarn-slide.color-pink { animation: slideshow 12s infinite; }
-    .yarn-slide.color-purple { animation: slideshow 12s infinite; }
-    .yarn-slide.color-red { animation: slideshow 12s infinite; }
-    .yarn-slide.color-salmon { animation: slideshow 12s infinite; }
-    .yarn-slide.color-teal { animation: slideshow 12s infinite; }
+    .yarn-slide.color-light-blue { animation: slideshow 12s infinite; }
+    .yarn-slide.color-light-purple { animation: slideshow 12s infinite; }
+    .yarn-slide.color-light-yellow { animation: slideshow 12s infinite; }
+    .yarn-slide.color-mango { animation: slideshow 12s infinite; }
+    .yarn-slide.color-mint { animation: slideshow 12s infinite; }
     .yarn-slide.color-white { animation: slideshow 12s infinite; }
     .yarn-slide.color-yellow { animation: slideshow 12s infinite; }
-    
+    .yarn-slide.color-cream {animation: slideshows 12s infinite;}
+    .yarn-slide.color-seaside {animation: slideshows 12s infinite;}
+    .yarn-slide.color-sunshine {animation: slideshows 12s infinite;}
+    .yarn-slide.color-very-berry{animation: slideshows 12s infinite;}
 }
 input[type="radio"] {
     display: none; /* Hide the radio buttons */
