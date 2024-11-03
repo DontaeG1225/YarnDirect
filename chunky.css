@@ -25,6 +25,55 @@
     margin: 20px;
 }
 
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quantity-selector label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.quantity-button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ff7f9c;
+    background-color: #ff7f9c; /* Pink background */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-button:hover {
+    background-color: #ff5a78; /* Darker pink on hover */
+}
+
+.quantity-button:disabled {
+    background-color: #f0c1c8; /* Light pink for disabled */
+    cursor: not-allowed;
+    border-color: #f0c1c8;
+}
+
+.quantity-selector input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 0 5px; /* Spacing between buttons and input */
+}
+
+
 .yarn-display {
     position: relative;
     width: 400px;
@@ -207,13 +256,15 @@ input[type="radio"] {
 
 footer {
     display: flex;
-    align-items: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     text-align: center;
     padding: 20px;
     background-color: #333;
     color: white;
     height: 50px;
 }
+
 
 .footer-div {
     margin: auto;
