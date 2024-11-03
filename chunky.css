@@ -241,6 +241,24 @@ input[type="radio"] {
 #yarn-charcoal { background-color: #36454f; }
 #yarn-yellow { background-color: yellow; }
 
+.basix-black { background-color: black; }
+.basix-blue { background-color: blue; }
+.basix-burgundy { background-color: rgb(79, 15, 15); }
+.basix-light-green { background-color: lightgreen; }
+.basix-cream { background-color: #f5f5dc; }
+.basix-light-blue { background-color: lightblue; }
+.basix-lilac { background-color: #e0bbf1; }
+.basix-orange { background-color: orange; }
+.basix-navy { background-color: navy; }
+.basix-peach { background-color: peach; }
+.basix-pink { background-color: pink; }
+.basix-pumpkin { background-color: #ff7518; }
+.basix-purple { background-color: purple; }
+.basix-raspberry { background-color: #e30b5c; }
+.basix-red { background-color: red; }
+.basix-charcoal { background-color: #36454f; }
+.basix-yellow { background-color: yellow; }
+
 /* Hover Effects for Image Change */
 /* .color:hover ~ .yarn-display .yarn-image { display: none; } /* Hide all images on hover */
 #color-black:hover ~ .yarn-display .default { display: block; } /* Default image */
