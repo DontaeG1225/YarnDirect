@@ -302,4 +302,71 @@ body, h1, h2, h3, p {
 
 
 
-/* chunky yarn*/
+/* checkout  page */
+
+.checkout-page {
+    max-width: 600px;
+    margin: 2rem auto; /* Center the section */
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-page h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.location-section {
+    margin-bottom: 1.5rem;
+}
+
+.location-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.location-section input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.order-summary {
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+
+.order-total {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.payment-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.place-order {
+    padding: 1rem 2rem;
+    background-color: #7fd798; /* Color for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.place-order:hover {
+    background-color: #66c48a; /* Darker shade for hover effect */
+}
