@@ -4,6 +4,20 @@
     margin: 10px;
 }
 
+/* Wrapper container around .yarn-display and .product-details */
+.product-container {
+    display: flex;
+    gap: 20px; /* Space between the image and the table */
+    align-items: flex-start; /* Align items to the top */
+}
+
+
+.product-details {
+    flex: 1; 
+    max-width: 400px;
+}
+
+
 .product-detail {
     display: flex;
     flex-direction: column;
@@ -17,15 +31,62 @@
     height: 400px;
 }
 
-.yarn-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    position: absolute;
-    display: -moz-stack; /* Hide all images by default */
+.yarn-display {
+    position: relative;
+    width: 500px; /* Adjust to your preferred width */
+    height: 500px; /* Adjust to your preferred height */
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+    border-radius: 8px; /* Rounds the corners */
 }
 
+.yarn-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease-in-out; /* Smooth fade effect */
+}
+
+.yarn-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire slide */
+    border-radius: 8px; /* Rounds the corners */
+}
+
+.yarn-slide.active {
+    opacity: 1; /* Active slide is visible */
+}
+
+/* Animation keyframes */
+@keyframes slideshow {
+    0% { opacity: 1; }
+    20% { opacity: 1; }
+    25% { opacity: 0; }
+    45% { opacity: 0; }
+    50% { opacity: 1; }
+    70% { opacity: 1; }
+    75% { opacity: 0; }
+    95% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Add this style for automatic slideshow effect */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+@media (min-width: 400px) {
+    /* Animation delay for each slide */
+    .yarn-slide.color-black { animation: slideshow 12s infinite; }
+    .yarn-slide.color-bright-pink { animation: slideshow 12s infinite; }
+    .yarn-slide.color-bubblegum { animation: slideshow 12s infinite; }
+    .yarn-slide.color-cotton-candy { animation: slideshow 12s infinite; }
+    /* Add additional colors here as needed */
+}
 input[type="radio"] {
     display: none; /* Hide the radio buttons */
 }
@@ -47,6 +108,42 @@ input[type="radio"] {
 #color-white:checked ~ .yarn-display .color-white {
     display: block; /* Show the selected image */
 }
+
+
+/* Color-Specific Backgrounds for Selectors */
+#color-black { background-color: #000; }
+#color-bright-pink { background-color: #ff69b4; }
+#color-bubblegum { background-color: #ff85a1; }
+#color-cotton-candy { background-color: #ffb7d5; }
+#color-cream { background-color: #fffdd0; }
+#color-light-blue { background-color: #add8e6; }
+#color-light-purple { background-color: #dda0dd; }
+#color-light-yellow { background-color: #ffffe0; }
+#color-mango { background-color: #ff8243; }
+#color-mint { background-color: #98ff98; }
+#color-seaside { background-color: #5f9ea0; }
+#color-sunshine { background-color: #ffdf00; }
+#color-tang { background-color: #ffcc00; }
+#color-very-berry { background-color: #a52a2a; }
+#color-white { background-color: #ffffff; }
+
+/* Hover Effects for Image Change */
+.color:hover ~ .yarn-display .yarn-image { display: none; } /* Hide all images on hover */
+#color-black:hover ~ .yarn-display .default { display: block; } /* Default image */
+#color-bright-pink:hover ~ .yarn-display .color-bright-pink { display: block; }
+#color-bubblegum:hover ~ .yarn-display .color-bubblegum { display: block; }
+#color-cotton-candy:hover ~ .yarn-display .color-cotton-candy { display: block; }
+#color-cream:hover ~ .yarn-display .color-cream { display: block; }
+#color-light-blue:hover ~ .yarn-display .color-light-blue { display: block; }
+#color-light-purple:hover ~ .yarn-display .color-light-purple { display: block; }
+#color-light-yellow:hover ~ .yarn-display .color-light-yellow { display: block; }
+#color-mango:hover ~ .yarn-display .color-mango { display: block; }
+#color-mint:hover ~ .yarn-display .color-mint { display: block; }
+#color-seaside:hover ~ .yarn-display .color-seaside { display: block; }
+#color-sunshine:hover ~ .yarn-display .color-sunshine { display: block; }
+#color-tang:hover ~ .yarn-display .color-tang { display: block; }
+#color-very-berry:hover ~ .yarn-display .color-very-berry { display: block; }
+#color-white:hover ~ .yarn-display .color-white { display: block; }
 
 /* Color selector styling */
 .color-options {
