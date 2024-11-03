@@ -157,6 +157,26 @@
     .yarn-slide.color-seaside {animation: slideshows 12s infinite;}
     .yarn-slide.color-sunshine {animation: slideshows 12s infinite;}
     .yarn-slide.color-very-berry{animation: slideshows 12s infinite;}
+
+    /*DK light yarn*/
+    .yarn-slide.yarn-black{animation: slideshows 12s infinite;}
+    .yarn-slide.yarn-blue{animation: slideshows 12s infinite;}
+    .yarn-slide.yarn-burgundy{animation: slideshows 12s infinite;}
+    .yarn-slide.yarn-light-green{animation: slideshows 12s infinite;}
+    .yarn-slide.yarn-cream{animation: slideshows 12s infinite;}
+    .yarn-slide.yarn-light-blue{animation: slideshows 12s infinite;}
+    .yarn-slide.yarn-lilac{animation: slideshows 12s infinite;}
+    .yarn-slide.yarn-orange{animation: slideshows 12s infinite;}
+    .yarn-slide.yarn-navy{animation: slideshows 12s infinite;}
+    .yarn-slide.yarn-pink{animation: slideshows 12s infinite;}
+    .yarn-slide.yarn-purple{animation: slideshows 12s infinite;}
+    .yarn-slide.yarn-red{animation: slideshows 12s infinite;}
+    .yarn-slide.yarn-peach{animation: slideshows 12s infinite;}
+    .yarn-slide.yarn-raspberry{animation: slideshows 12s infinite;}
+    .yarn-slide.yarn-yellow{animation: slideshows 12s infinite;}
+    .yarn-slide.yarn-charcoal{animation: slideshows 12s infinite;}
+    .yarn-slide.yarn-white{animation: slideshows 12s infinite;}
+
 }
 input[type="radio"] {
     display: none; /* Hide the radio buttons */
