@@ -145,57 +145,55 @@
     /* Animation delay for each slide */
 
     /*Chunky yarn*/
-    .yarn-slide.color-black { animation: slideshow 12s infinite 0s; }
-    .yarn-slide.color-bright-pink { animation: slideshow 12s infinite 2s; }
-    .yarn-slide.color-bubblegum { animation: slideshow 12s infinite  4s; }
-    .yarn-slide.color-cotton-candy { animation: slideshow 12s infinite  6s; }
-    .yarn-slide.color-tang { animation: slideshow 12s infinite   8s; }
-    .yarn-slide.color-lavender { animation: slideshow 12s infinite   10s; }
-    .yarn-slide.color-mint { animation: slideshow 12s infinite   12s; }
-    .yarn-slide.color-light-blue { animation: slideshow 12s infinite    14s; }
-    .yarn-slide.color-light-purple { animation: slideshow 12s infinite     16s; }
-    .yarn-slide.color-light-yellow { animation: slideshow 12s infinite      18s; }
-    .yarn-slide.color-mango { animation: slideshow 12s infinite        20s; }
-    .yarn-slide.color-mint { animation: slideshow 12s infinite         22s; }
-    .yarn-slide.color-white { animation: slideshow 12s infinite           24s; }
-    .yarn-slide.color-yellow { animation: slideshow 12s infinite             26s; }
-    .yarn-slide.color-cream {animation: slideshow 12s infinite                28s; }
-    .yarn-slide.color-seaside {animation: slideshow 12s infinite                  30s; }
-    .yarn-slide.color-sunshine {animation: slideshow 12s infinite                     32s; }
-    .yarn-slide.color-very-berry{animation: slideshow 12s infinite                         34s; }
+    #chunky-yarn-page .yarn-slide.color-black { animation: slideshow 12s infinite 0s; }
+    #chunky-yarn-page .yarn-slide.color-bright-pink { animation: slideshow 12s infinite 2s; }
+    #chunky-yarn-page .yarn-slide.color-bubblegum { animation: slideshow 12s infinite  4s; }
+    #chunky-yarn-page .yarn-slide.color-cotton-candy { animation: slideshow 12s infinite  6s; }
+    #chunky-yarn-page .yarn-slide.color-tang { animation: slideshow 12s infinite   8s; }
+    #chunky-yarn-page .yarn-slide.color-lavender { animation: slideshow 12s infinite   10s; }
+    #chunky-yarn-page .yarn-slide.color-mint { animation: slideshow 12s infinite   12s; }
+    #chunky-yarn-page .yarn-slide.color-light-blue { animation: slideshow 12s infinite    14s; }
+    #chunky-yarn-page .yarn-slide.color-light-purple { animation: slideshow 12s infinite     16s; }
+    #chunky-yarn-page .yarn-slide.color-light-yellow { animation: slideshow 12s infinite      18s; }
+    #chunky-yarn-page .yarn-slide.color-mango { animation: slideshow 12s infinite        20s; }
+    #chunky-yarn-page .yarn-slide.color-mint { animation: slideshow 12s infinite         22s; }
+    #chunky-yarn-page .yarn-slide.color-white { animation: slideshow 12s infinite           24s; }
+    #chunky-yarn-page .yarn-slide.color-yellow { animation: slideshow 12s infinite             26s; }
+    #chunky-yarn-page .yarn-slide.color-cream {animation: slideshow 12s infinite                28s; }
+    #chunky-yarn-page .yarn-slide.color-seaside {animation: slideshow 12s infinite                  30s; }
+    #chunky-yarn-page .yarn-slide.color-sunshine {animation: slideshow 12s infinite                     32s; }
+    #chunky-yarn-page .yarn-slide.color-very-berry{animation: slideshow 12s infinite                         34s; }
 
     /*DK light yarn*/
-    .yarn-slide.yarn-black{animation: slideshow 12s infinite 0s;}
-    .yarn-slide.yarn-blue{animation: slideshow 12s infinite  2s;}
-    .yarn-slide.yarn-burgundy{animation: slideshow 12s infinite   4s;}
-    .yarn-slide.yarn-light-green{animation: slideshow 12s infinite    6s;}
-    .yarn-slide.yarn-cream{animation: slideshow 12s infinite      8s;}
-    .yarn-slide.yarn-light-blue{animation: slideshow 12s infinite        10s;} 
-    .yarn-slide.yarn-lilac{animation: slideshow 12s infinite          12s;}
-    .yarn-slide.yarn-orange{animation: slideshow 12s infinite   14s;}
-    .yarn-slide.yarn-navy{animation: slideshow 12s infinite      16s;}
-    .yarn-slide.yarn-pink{animation: slideshow 12s infinite         18s;}
-    .yarn-slide.yarn-purple{animation: slideshow 12s infinite            20s;}
-    .yarn-slide.yarn-red{animation: slideshow 12s infinite                22s;}
-    .yarn-slide.yarn-peach{animation: slideshow 12s infinite                   24s;}
-    .yarn-slide.yarn-raspberry{animation: slideshow 12s infinite                       26s;}
-    .yarn-slide.yarn-yellow{animation: slideshow 12s infinite                           28s;}
-    .yarn-slide.yarn-charcoal{animation: slideshow 12s infinite                               30s;}
+    #dk-light-page .yarn-slide.yarn-black{animation: slideshow 12s infinite 0s;}
+    #dk-light-page .yarn-slide.yarn-blue{animation: slideshow 12s infinite  2s;}
+    #dk-light-page .yarn-slide.yarn-burgundy{animation: slideshow 12s infinite   4s;}
+    #dk-light-page .yarn-slide.yarn-light-green{animation: slideshow 12s infinite    6s;}
+    #dk-light-page .yarn-slide.yarn-cream{animation: slideshow 12s infinite      8s;}
+    #dk-light-page .yarn-slide.yarn-light-blue{animation: slideshow 12s infinite        10s;} 
+    #dk-light-page .yarn-slide.yarn-lilac{animation: slideshow 12s infinite          12s;}
+    #dk-light-page .yarn-slide.yarn-orange{animation: slideshow 12s infinite   14s;}
+    #dk-light-page .yarn-slide.yarn-navy{animation: slideshow 12s infinite      16s;}
+    #dk-light-page .yarn-slide.yarn-pink{animation: slideshow 12s infinite         18s;}
+    #dk-light-page .yarn-slide.yarn-purple{animation: slideshow 12s infinite            20s;}
+    #dk-light-page .yarn-slide.yarn-red{animation: slideshow 12s infinite                22s;}
+    #dk-light-page .yarn-slide.yarn-peach{animation: slideshow 12s infinite                   24s;}
+    #dk-light-page .yarn-slide.yarn-raspberry{animation: slideshow 12s infinite                       26s;}
+    #dk-light-page .yarn-slide.yarn-yellow{animation: slideshow 12s infinite                           28s;}
+    #dk-light-page .yarn-slide.yarn-charcoal{animation: slideshow 12s infinite                               30s;}
     /* .yarn-slide.yarn-white{animation: slideshow 12s infinite                                      32s;} */
 
     /*Basix yarn*/
-    .yarn-slide.basix-blue{animation: slideshow 12s infinite 0s;}
-    .yarn-slide.basix-brown{animation: slideshow 12s infinite 2s;}
-    .yarn-slide.basix-blush{animation: slideshow 12s infinite 4s;}
-    .yarn-slide.basix-charcoal{animation: slideshow 12s infinite 6s;}
-    .yarn-slide.basix-cotton-candy{animation: slideshow 12s infinite 8s;}
-    .yarn-slide.basix-light-blue{animation: slideshow 12s infinite  10s;}
-    .yarn-slide.basix-mid-brown{animation: slideshow 12s  infinite  12s;}
-    .yarn-slide.basix-mint{animation: slideshow 12s infinite   14s;}
-    .yarn-slide.basix-pine{animation: slideshow 12s infinite    16s;}
-    .yarn-slide.basix-red{animation: slideshow 12s infinite 18s;}
-    .yarn-slide.basix-tweed{animation: slideshow 12s infinite 20s;}
-    .yarn-slide.basix-white{animation: slideshow 12s infinite  22s;}
+    #basix-yarn-page .yarn-slide.basix-blue{animation: slideshow 12s infinite 0s;}
+    #basix-yarn-page .yarn-slide.basix-blush{animation: slideshow 12s infinite 4s;}
+    #basix-yarn-page .yarn-slide.basix-cotton-candy{animation: slideshow 12s infinite 8s;}
+    #basix-yarn-page .yarn-slide.basix-light-blue{animation: slideshow 12s infinite  10s;}
+    #basix-yarn-page .yarn-slide.basix-mid-brown{animation: slideshow 12s  infinite  12s;}
+    #basix-yarn-page .yarn-slide.basix-mint{animation: slideshow 12s infinite   14s;}
+    #basix-yarn-page .yarn-slide.basix-pine{animation: slideshow 12s infinite    16s;}
+    #basix-yarn-page .yarn-slide.basix-red{animation: slideshow 12s infinite 18s;}
+    #basix-yarn-page .yarn-slide.basix-tweed{animation: slideshow 12s infinite 20s;}
+    #basix-yarn-page .yarn-slide.basix-white{animation: slideshow 12s infinite  22s;}
 
 }
 input[type="radio"] {
