@@ -200,6 +200,11 @@ input[type="radio"] {
     display: block;
 }
 
+#color-black:checked ~ .yarn-display .yarn-black,
+#color-blue:checked ~ .yarn-display .yarn-blue{
+    opacity: 1;
+}
+
 
 /* Color-Specific Backgrounds for Selectors */
 #color-black { background-color: #000; }
