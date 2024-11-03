@@ -162,7 +162,7 @@ input[type="radio"] {
 #color-tang:checked ~ .yarn-display .color-tang,
 #color-very-berry:checked ~ .yarn-display .color-very-berry,
 #color-white:checked ~ .yarn-display .color-white {
-    display: block; /* Show the selected image */
+    display: block;
 }
 
 
@@ -267,14 +267,6 @@ input[type="radio"] {
     margin-top: 20px;
 }
 
-.add-to-cart,
-.more-info {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
 
 footer {
@@ -368,3 +360,5 @@ footer {
 .product-details td:hover {
     background-color: #ffcad4; /* Change background on hover */
 }
+
+
