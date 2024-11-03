@@ -25,6 +25,13 @@
     margin: 20px;
 }
 
+.price p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff7f9c; 
+    margin-bottom: 10px; /* Space between price and quantity selector */
+}
+
 .quantity-selector {
     display: flex;
     align-items: center;
