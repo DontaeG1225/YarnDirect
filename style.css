@@ -370,7 +370,7 @@ body, h1, h2, h3, p {
 
 .place-order {
     padding: 1rem 2rem;
-    background-color: #7fd798; /* Color for the button */
+    background-color: #FFC0CB; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -379,7 +379,7 @@ body, h1, h2, h3, p {
 }
 
 .place-order:hover {
-    background-color: #66c48a; /* Darker shade for hover effect */
+    background-color: #FF69B4; 
 }
 
 
@@ -458,4 +458,44 @@ nav ul li {
     nav ul li {
         margin: 5px 0; /* Reduce margin for smaller screens */
     }
+}
+
+/* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #FF69B4;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #FFC0CB;
 }

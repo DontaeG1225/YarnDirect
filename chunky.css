@@ -144,6 +144,8 @@
 @media (min-width: 400px) {
     /* Animation delay for each slide */
 
+    /*Yarn*/
+
     /*Chunky yarn*/
     #chunky-yarn-page .yarn-slide.color-black { animation: slideshow 12s infinite 0s; }
     #chunky-yarn-page .yarn-slide.color-bright-pink { animation: slideshow 12s infinite 2s; }
@@ -224,6 +226,8 @@
     #cotton-yarn-page .yarn-slide.cotton-sea{animation: slideshow      12s  infinite  18s;}
     #cotton-yarn-page .yarn-slide.cotton-whiite{animation: slideshow      12s  infinite  20s;}
     #cotton-yarn-page .yarn-slide.cotton-yellow{animation: slideshow        12s  infinite  22s;}
+
+    /*Hooks*/
     
 
 }
@@ -255,6 +259,7 @@ input[type="radio"] {
     opacity: 1;
 }
 
+/*yarn*/
 
 /* Color-Specific Backgrounds for Selectors */
 #color-black { background-color: #000; }
@@ -333,6 +338,10 @@ input[type="radio"] {
 .cotton-sea { background-color: #00CED1; }
 .cotton-whiite { background-color: #FFFFFF; }
 .cotton-yellow { background-color: #FFFF66; }
+
+/*hooks*/
+
+
 
 /* Hover Effects for Image Change */
 /* .color:hover ~ .yarn-display .yarn-image { display: none; } /* Hide all images on hover */
