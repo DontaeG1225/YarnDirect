@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Row Counter - YarnDirect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/Yarn Direct Slogan Logo No BG.png">
+    <link rel="stylesheet" href="chunky.css">
+</head>
+<body id="row-counter-page">
+
+<nav>
+    <a href="home.html"><img src="img/Yarn Direct Slogan Logo No BG.png" alt="Logo" class="nav-logo"></a>
+    <ul>
+        <li><a href="home.html">Home</a></li>       
+        <li><a href="products.html">Products</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+    </ul>
+</nav>
+
+<main>
+   
+    <section class="product-detail">
+        <!-- Row Counter Display -->
+        <div class="product-container">
+            <div class="row-counter-display">                    
+                <div id="row-counter-page">
+                    <div class="row-counter-slide active">
+                        <img src="img/other/Crochet-Knitting-Row-Counter-Stitch-Tally.webp" alt="Row Counter">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Price Details -->
+            <div class="product-details">
+                <h3>Product Details</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Color:</td>
+                            <td>Red (standard)</td>
+                        </tr>
+                        <tr>
+                            <td>Material:</td>
+                            <td>Plastic</td>
+                        </tr>
+                        <tr>
+                            <td>Features:</td>
+                            <td>Counts rows accurately, Lightweight and portable</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Price Details</h3>
+                <!-- Pricing Table -->
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Basic Row Counter</td>
+                            <td>$4.99</td>
+                        </tr>
+                        <tr>
+                            <td>Deluxe Row Counter</td>
+                            <td>$9.99</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                
+            <!-- Quantity Selector -->
+            <div class="action-buttons">
+                <div class="purchase-options">
+                    <h3>Select Quantity</h3>
+                    <form>
+                        <label for="model-selection">Choose Model:</label>
+                        <select id="model-selection">
+                            <option value="basic">Basic Row Counter</option>
+                            <option value="deluxe">Deluxe Row Counter</option>
+                        </select>
+                        <label for="row-counter-quantity-input">Quantity:</label>
+                        <input type="number" id="row-counter-quantity-input" name="row-counter-quantity" min="0" value="0">
+                        
+                        <!-- Add to Cart Button -->
+                        <button type="submit" class="add-to-cart">Add Selected to Cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Yarn Direct | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
