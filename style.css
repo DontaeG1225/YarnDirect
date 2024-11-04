@@ -775,6 +775,9 @@ header {
     padding: 8px 0;
     border-bottom: 1px solid #ddd;
 }
+.about-section li {
+    color: #333;
+}
 
 .about-section ul li strong {
     color: #333;
