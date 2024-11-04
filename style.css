@@ -261,10 +261,6 @@ nav, header, footer {
 
 /*Products page*/
 
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-}
 
 .product-section {
     margin: 20px;
@@ -275,26 +271,23 @@ body, h1, h2, h3, p {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-
-    
 }
 
 .product {
-    width: 180px;
+    width: 180px; /* Fixed width for uniformity */
+    height: 280px; /* Fixed height for container */
     text-align: center;
     transition: transform 0.3s ease;
-
-    text-align: center;
     flex: 0 0 200px; 
-    margin: 0px;
-   
+    margin: 0;
     padding: 10px;
-    transition: transform 0.2s; 
-    background-color: #FFE3E3;
+    background-color: #FFE3E3; /* No change to background color */
 }
 
 .product img {
     width: 100%;
+    height: 180px; /* Fixed height for images */
+    object-fit: cover; /* Ensures images cover the space uniformly */
     border-radius: 8px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -305,10 +298,12 @@ body, h1, h2, h3, p {
 }
 
 .product h3 {
-    font-family: 'quicksand medium';
+    font-family: 'quicksand medium'; /* No change to font family */
     margin-top: 10px;
-    font-size: 1.1em;
+    font-size: 1.1em; /* No change to font size */
+    color: inherit; /* Retains the existing color */
 }
+
 
 
 

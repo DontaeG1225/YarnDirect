@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Checkout</title>
+    <title>Checkout - YarnDirect</title>
     <link rel="icon" type="image/png" href="img/Yarn Direct Slogan Logo No BG.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -38,9 +38,31 @@
 
             <!-- Order Summary Section -->
             <div class="order-summary">
+                <h3>Order Summary</h3>
+                
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <p>Premium DK Light Yarn (Blue) - Qty: 2</p>
+                        <p>$12.00 each</p>
+                        <p>Total: $24.00</p>
+                    </div>
+                    <div class="cart-item">
+                        <p>Crochet Aluminum Hook Set (9 pieces) - Qty: 1</p>
+                        <p>$50.00</p>
+                    </div>
+                    <div class="cart-item">
+                        <p>Row Counter - Qty: 1</p>
+                        <p>$4.99</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Subtotal and Delivery Fee -->
                 <div class="order-item">
                     <p>Item Subtotal:</p>
-                    <p>$<span id="subtotal">30.00</span></p> <!-- Adjust initial subtotal as needed -->
+                    <p>$<span id="subtotal">43.99</span></p>
                 </div>
 
                 <div class="order-item">
@@ -50,9 +72,10 @@
 
                 <hr>
 
+                <!-- Order Total -->
                 <div class="order-total">
                     <p><strong>Total:</strong></p>
-                    <p><strong>$<span id="total">45.00</span></strong></p> <!-- Subtotal + Delivery Fee -->
+                    <p><strong>$<span id="total">58.99</span></strong></p>
                 </div>
             </div>
 
