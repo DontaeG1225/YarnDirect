@@ -32,6 +32,10 @@ main {
     margin-top: -20px; 
 }
 
+header, .hero-image, .product-list {
+    margin: 0;
+    padding: 0;
+}
 /* Basic styling for the navigation bar */
 /* .clearfix::after{
     content: "";
