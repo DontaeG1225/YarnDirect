@@ -228,7 +228,10 @@
     #cotton-yarn-page .yarn-slide.cotton-yellow{animation: slideshow        12s  infinite  22s;}
 
     /*Hooks*/
-    
+    /*Grip handle hooks*/
+    #grip-handle-hooks-page .yarn-slide.grip-black{animation: slideshow  12s infinite 0s;}
+    #grip-handle-hooks-page .yarn-slide.grip-color{animation: slideshow   12s infinite  2s;}
+    #grip-handle-hooks-page .yarn-slide.grip-colored{animation: slideshow     12s infinite  4s;}
 
 }
 
@@ -528,3 +531,133 @@ footer {
 h3{
     text-align: center;
 }
+
+/* Styles for Individual and Set Pricing sections */
+.individual-pricing, .set-pricing {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 90%;
+    max-width: 300px;
+}
+
+/* Headers for pricing sections */
+.individual-pricing h4, .set-pricing h4 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff66b2; /* Pink underline */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Individual hook prices list */
+.individual-pricing p {
+    font-size: 1em;
+    color: #666;
+    margin: 5px 0;
+    padding-left: 10px;
+}
+
+/* Set pricing styling */
+.set-pricing p {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #444;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+/* Quantity selector input styles */
+.quantity-selector label {
+    font-size: 0.9em;
+    color: #333;
+    margin-right: 10px;
+}
+
+.quantity-selector input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    margin: 5px 0;
+    font-size: 0.9em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+/* Style for pricing tables */
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.pricing-table th, .pricing-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.pricing-table th {
+    background-color: #ff66b2; /* Pink background for header */
+    color: white;
+    font-weight: bold;
+}
+
+.pricing-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.pricing-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Table headers for better readability */
+.pricing-table th {
+    font-size: 1em;
+    text-transform: capitalize;
+}
+
+/*Quantity Selector for Each Hook*/
+.action-buttons {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.purchase-options {
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.purchase-type {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+.quantity-section {
+    margin-bottom: 20px;
+}
+
+.quantity-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds space between inputs */
+}
+
+input[type="number"], select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
