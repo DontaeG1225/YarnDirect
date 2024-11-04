@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Eyes - YarnDirect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/Yarn Direct Slogan Logo No BG.png">
+    <link rel="stylesheet" href="chunky.css">
+</head>
+<body id="safety-eyes-page">
+
+<nav>
+    <a href="home.html"><img src="img/Yarn Direct Slogan Logo No BG.png" alt="Logo" class="nav-logo"></a>
+    <ul>
+        <li><a href="home.html">Home</a></li>       
+        <li><a href="products.html">Products</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+</nav>
+
+<main>
+   
+    <section class="product-detail">
+        <!-- Safety Eyes Display -->
+        <div class="product-container">
+            <div class="safety-eyes-display">                    
+                <div id="safety-eyes-page">
+                    <div class="safety-eyes-slide active">
+                        <img src="img/other/safety.avif" alt="Safety Eyes">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Price Details -->
+            <div class="product-details">
+                <h3>Product Details</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Color:</td>
+                            <td>Black (standard)</td>
+                        </tr>
+                        <tr>
+                            <td>Material:</td>
+                            <td>Plastic</td>
+                        </tr>
+                        <tr>
+                            <td>Size Options:</td>
+                            <td>6mm, 9mm, 12mm, 15mm, 18mm</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Price Details</h3>
+                <!-- Pricing Table -->
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Size (mm)</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>6</td>
+                            <td>$3.99</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>$4.99</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>$5.99</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>$6.99</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>$7.99</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                
+            <!-- Quantity Selector -->
+            <div class="action-buttons">
+                <div class="purchase-options">
+                    <h3>Select Quantity</h3>
+                    <form>
+                        <label for="size-selection">Choose Size:</label>
+                        <select id="size-selection">
+                            <option value="6">6mm</option>
+                            <option value="9">9mm</option>
+                            <option value="12">12mm</option>
+                            <option value="15">15mm</option>
+                            <option value="18">18mm</option>
+                        </select>
+                        <label for="safety-eyes-quantity-input">Quantity:</label>
+                        <input type="number" id="safety-eyes-quantity-input" name="safety-eyes-quantity" min="0" value="0">
+                        
+                        <!-- Add to Cart Button -->
+                        <button type="submit" class="add-to-cart">Add Selected to Cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Yarn Direct | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

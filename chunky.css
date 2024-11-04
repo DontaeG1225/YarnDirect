@@ -1,0 +1,657 @@
+/* Wrapper container around .yarn-display and .product-details */
+.product-container {
+    display: flex;
+    gap: 20px; /* Space between the image and the table */
+    align-items: flex-start; /* Align items to the top */
+}
+
+
+.product-details {
+    flex: 1; 
+    max-width: 400px;
+}
+
+
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.price p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff7f9c; 
+    margin-bottom: 10px; /* Space between price and quantity selector */
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quantity-selector label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.quantity-button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ff7f9c;
+    background-color: #ff7f9c; /* Pink background */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-button:hover {
+    background-color: #ff5a78; /* Darker pink on hover */
+}
+
+.quantity-button:disabled {
+    background-color: #f0c1c8; /* Light pink for disabled */
+    cursor: not-allowed;
+    border-color: #f0c1c8;
+}
+
+.quantity-selector input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 0 5px; /* Spacing between buttons and input */
+}
+
+
+.yarn-display {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.yarn-display {
+    position: relative;
+    width: 500px; /* Adjust to your preferred width */
+    height: 500px; /* Adjust to your preferred height */
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+    border-radius: 8px; /* Rounds the corners */
+}
+
+.yarn-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease-in-out; /* Smooth fade effect */
+}
+
+.yarn-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire slide */
+    border-radius: 8px; /* Rounds the corners */
+}
+
+.yarn-slide.active {
+    opacity: 1; /* Active slide is visible */
+}
+
+/* Animation keyframes */
+@keyframes slideshow {
+     /* 0% { opacity: 1; }
+    20% { opacity: 1; }
+    25% { opacity: 0; }
+    45% { opacity: 0; }
+    50% { opacity: 1; }
+    70% { opacity: 1; }
+    75% { opacity: 0; }
+    95% { opacity: 0; } 
+    100% { opacity: 1; } */
+
+    0% { opacity: 0; }
+    4% { opacity: 1; }
+    16% { opacity: 1; }
+    20% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Add this style for automatic slideshow effect */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+@media (min-width: 400px) {
+    /* Animation delay for each slide */
+
+    /*Yarn*/
+
+    /*Chunky yarn*/
+    #chunky-yarn-page .yarn-slide.color-black { animation: slideshow 12s infinite 0s; }
+    #chunky-yarn-page .yarn-slide.color-bright-pink { animation: slideshow 12s infinite 2s; }
+    #chunky-yarn-page .yarn-slide.color-bubblegum { animation: slideshow 12s infinite  4s; }
+    #chunky-yarn-page .yarn-slide.color-cotton-candy { animation: slideshow 12s infinite  6s; }
+    #chunky-yarn-page .yarn-slide.color-tang { animation: slideshow 12s infinite   8s; }
+    #chunky-yarn-page .yarn-slide.color-lavender { animation: slideshow 12s infinite   10s; }
+    #chunky-yarn-page .yarn-slide.color-mint { animation: slideshow 12s infinite   12s; }
+    #chunky-yarn-page .yarn-slide.color-light-blue { animation: slideshow 12s infinite    14s; }
+    #chunky-yarn-page .yarn-slide.color-light-purple { animation: slideshow 12s infinite     16s; }
+    #chunky-yarn-page .yarn-slide.color-light-yellow { animation: slideshow 12s infinite      18s; }
+    #chunky-yarn-page .yarn-slide.color-mango { animation: slideshow 12s infinite        20s; }
+    #chunky-yarn-page .yarn-slide.color-mint { animation: slideshow 12s infinite         22s; }
+    #chunky-yarn-page .yarn-slide.color-white { animation: slideshow 12s infinite           24s; }
+    #chunky-yarn-page .yarn-slide.color-yellow { animation: slideshow 12s infinite             26s; }
+    #chunky-yarn-page .yarn-slide.color-cream {animation: slideshow 12s infinite                28s; }
+    #chunky-yarn-page .yarn-slide.color-seaside {animation: slideshow 12s infinite                  30s; }
+    #chunky-yarn-page .yarn-slide.color-sunshine {animation: slideshow 12s infinite                     32s; }
+    #chunky-yarn-page .yarn-slide.color-very-berry{animation: slideshow 12s infinite                         34s; }
+
+    /*DK light yarn*/
+    #dk-light-page .yarn-slide.yarn-black{animation: slideshow 12s infinite 0s;}
+    #dk-light-page .yarn-slide.yarn-blue{animation: slideshow 12s infinite  2s;}
+    #dk-light-page .yarn-slide.yarn-burgundy{animation: slideshow 12s infinite   4s;}
+    #dk-light-page .yarn-slide.yarn-light-green{animation: slideshow 12s infinite    6s;}
+    #dk-light-page .yarn-slide.yarn-cream{animation: slideshow 12s infinite      8s;}
+    #dk-light-page .yarn-slide.yarn-light-blue{animation: slideshow 12s infinite        10s;} 
+    #dk-light-page .yarn-slide.yarn-lilac{animation: slideshow 12s infinite          12s;}
+    #dk-light-page .yarn-slide.yarn-orange{animation: slideshow 12s infinite   14s;}
+    #dk-light-page .yarn-slide.yarn-navy{animation: slideshow 12s infinite      16s;}
+    #dk-light-page .yarn-slide.yarn-pink{animation: slideshow 12s infinite         18s;}
+    #dk-light-page .yarn-slide.yarn-purple{animation: slideshow 12s infinite            20s;}
+    #dk-light-page .yarn-slide.yarn-red{animation: slideshow 12s infinite                22s;}
+    #dk-light-page .yarn-slide.yarn-peach{animation: slideshow 12s infinite                   24s;}
+    #dk-light-page .yarn-slide.yarn-raspberry{animation: slideshow 12s infinite                       26s;}
+    #dk-light-page .yarn-slide.yarn-yellow{animation: slideshow 12s infinite                           28s;}
+    #dk-light-page .yarn-slide.yarn-charcoal{animation: slideshow 12s infinite                               30s;}
+    /* .yarn-slide.yarn-white{animation: slideshow 12s infinite                                      32s;} */
+
+    /*Basix yarn*/
+    #basix-yarn-page .yarn-slide.basix-blue{animation: slideshow 12s infinite 0s;}
+    #basix-yarn-page .yarn-slide.basix-blush{animation: slideshow 12s infinite 2s;}
+    #basix-yarn-page .yarn-slide.basix-cotton-candy{animation: slideshow 12s infinite 4s;}
+    #basix-yarn-page .yarn-slide.basix-light-blue{animation: slideshow 12s infinite  8s;}
+    #basix-yarn-page .yarn-slide.basix-mid-brown{animation: slideshow 12s  infinite  10s;}
+    #basix-yarn-page .yarn-slide.basix-mint{animation: slideshow 12s infinite   12s;}
+    #basix-yarn-page .yarn-slide.basix-pine{animation: slideshow 12s infinite    14s;}
+    #basix-yarn-page .yarn-slide.basix-red{animation: slideshow 12s infinite 16s;}
+    #basix-yarn-page .yarn-slide.basix-tweed{animation: slideshow 12s infinite 18s;}
+    #basix-yarn-page .yarn-slide.basix-white{animation: slideshow 12s infinite  20s;}
+
+    /*Stitch yarn*/
+    #stitch-yarn-page .yarn-slide.stitch-brown{animation: slideshow 12s  infinite 0s;}
+    #stitch-yarn-page .yarn-slide.stitch-crochoal{animation: slideshow  12s  infinite  2s;}
+    #stitch-yarn-page .yarn-slide.stitch-dark-brown{animation: slideshow 12 s  infinite  4s;}
+    #stitch-yarn-page .yarn-slide.stitch-grape-crush{animation: slideshow  12s  infinite  6s;}
+    #stitch-yarn-page .yarn-slide.stitch-grey{animation: slideshow   12s  infinite  8s;}
+    #stitch-yarn-page .yarn-slide.stitch-green{animation: slideshow   12s  infinite  10s;}
+    #stitch-yarn-page .yarn-slide.stitch-light-green{animation: slideshow   12s  infinite  12s;}
+    #stitch-yarn-page .yarn-slide.stitch-light-purple{animation: slideshow    12s  infinite  14s;}
+    #stitch-yarn-page .yarn-slide.stitch-marron{animation: slideshow  12s  infinite  16s;}
+    #stitch-yarn-page .yarn-slide.stitch-orange{animation: slideshow   12s  infinite  18s;}
+    #stitch-yarn-page .yarn-slide.stitch-pink{animation: slideshow    12s  infinite  20s;}
+    #stitch-yarn-page .yarn-slide.stitch-purple{animation: slideshow   12s  infinite  22s;}
+    #stitch-yarn-page .yarn-slide.stitch-sand{animation: slideshow 12s  infinite  24s;}
+    #stitch-yarn-page .yarn-slide.stitch-yellow{animation: slideshow   12s  infinite  26s;}
+
+    /*Cotton  yarn*/
+    #cotton-yarn-page .yarn-slide.cotton-black{animation: slideshow  12s  infinite 0s;}
+    #cotton-yarn-page .yarn-slide.cotton-blue-iris{animation: slideshow   12s  infinite  2s;}
+    #cotton-yarn-page .yarn-slide.cotton-blue{animation: slideshow    12s  infinite  4s;}
+    #cotton-yarn-page .yarn-slide.cotton-cotton-candy{animation: slideshow   12s  infinite  6s;}
+    #cotton-yarn-page .yarn-slide.cotton-cream{animation: slideshow    12s  infinite  8s;}
+    #cotton-yarn-page .yarn-slide.cotton-green{animation: slideshow    12s  infinite  10s;}
+    #cotton-yarn-page .yarn-slide.cotton-grey{animation: slideshow    12s  infinite  12s;}
+    #cotton-yarn-page .yarn-slide.cotton-light-purple{animation: slideshow    12s  infinite  14s;}
+    #cotton-yarn-page .yarn-slide.cotton-red{animation: slideshow     12s  infinite  16s;}
+    #cotton-yarn-page .yarn-slide.cotton-sea{animation: slideshow      12s  infinite  18s;}
+    #cotton-yarn-page .yarn-slide.cotton-whiite{animation: slideshow      12s  infinite  20s;}
+    #cotton-yarn-page .yarn-slide.cotton-yellow{animation: slideshow        12s  infinite  22s;}
+
+    /*Hooks*/
+    /*Grip handle hooks*/
+    #grip-handle-hooks-page .yarn-slide.grip-black{animation: slideshow  12s infinite 0s;}
+    #grip-handle-hooks-page .yarn-slide.grip-color{animation: slideshow   12s infinite  2s;}
+    #grip-handle-hooks-page .yarn-slide.grip-colored{animation: slideshow     12s infinite  4s;}
+
+}
+
+input[type="radio"] {
+    display: none; /* Hide the radio buttons */
+}
+
+#color-black:checked ~ .yarn-display .color-black,
+#color-bright-pink:checked ~ .yarn-display .color-bright-pink,
+#color-bubblegum:checked ~ .yarn-display .color-bubblegum,
+#color-cotton-candy:checked ~ .yarn-display .color-cotton-candy,
+#color-cream:checked ~ .yarn-display .color-cream,
+#color-light-blue:checked ~ .yarn-display .color-light-blue,
+#color-light-purple:checked ~ .yarn-display .color-light-purple,
+#color-light-yellow:checked ~ .yarn-display .color-light-yellow,
+#color-mango:checked ~ .yarn-display .color-mango,
+#color-mint:checked ~ .yarn-display .color-mint,
+#color-seaside:checked ~ .yarn-display .color-seaside,
+#color-sunshine:checked ~ .yarn-display .color-sunshine,
+#color-tang:checked ~ .yarn-display .color-tang,
+#color-very-berry:checked ~ .yarn-display .color-very-berry,
+#color-white:checked ~ .yarn-display .color-white {
+    display: block;
+}
+
+#color-black:checked ~ .yarn-display .yarn-black,
+#color-blue:checked ~ .yarn-display .yarn-blue{
+    opacity: 1;
+}
+
+/*yarn*/
+
+/* Color-Specific Backgrounds for Selectors */
+#color-black { background-color: #000; }
+#color-bright-pink { background-color: #ff69b4; }
+#color-bubblegum { background-color: #ff85a1; }
+#color-cotton-candy { background-color: #ffb7d5; }
+#color-cream { background-color: #fffdd0; }
+#color-light-blue { background-color: #add8e6; }
+#color-light-purple { background-color: #dda0dd; }
+#color-light-yellow { background-color: #ffffe0; }
+#color-mango { background-color: #ff8243; }
+#color-mint { background-color: #98ff98; }
+#color-seaside { background-color: #5f9ea0; }
+#color-sunshine { background-color: #ffdf00; }
+#color-tang { background-color: #ffcc00; }
+#color-very-berry { background-color: #a52a2a; }
+#color-white { background-color: #ffffff; }
+
+#yarn-black {background-color: #000}
+#yarn-blue { background-color: blue; }
+#yarn-burgundy { background-color: #800020; }
+#yarn-light-green { background-color: lightgreen; }
+#yarn-cream { background-color: #f5f5dc; }
+#yarn-light-blue { background-color: lightblue; }
+#yarn-lilac { background-color: #c8a2c8; }
+#yarn-orange { background-color: orange; }
+#yarn-navy { background-color: navy; }
+#yarn-peach { background-color: peachpuff; }
+#yarn-pink { background-color: pink; }
+#yarn-pumpkin { background-color: #ff7518; }
+#yarn-purple { background-color: purple; }
+#yarn-raspberry { background-color: #e30b5d; }
+#yarn-red { background-color: red; }
+#yarn-charcoal { background-color: #36454f; }
+#yarn-yellow { background-color: yellow; }
+
+
+#basix-blue { background-color: blue; }
+#basix-charcoal { background-color: #36454f; } /* Dark charcoal */
+#basix-red { background-color: red; }
+#basix-light-blue { background-color: lightblue; }
+#basix-blush { background-color: #f1c2c9; } /* Light blush pink */
+#basix-brown { background-color: #8b4513; } /* Brown */
+#basix-cotton-canday { background-color: #ffbcd9; } /* Cotton candy pink */
+#basix-mid-brown { background-color: #a0522d; } /* Medium brown */
+#basix-mint { background-color: #98ff98; } /* Mint green */
+#basix-pine { background-color: #01796f; } /* Pine green */
+#basix-tweed { background-color: #d2b48c; } /* Tweed tan */
+#basix-white { background-color: white; }
+
+
+.stitch-blue { background-color: #0000FF; } /* Blue */
+.stitch-crochoal { background-color: #36454F; } /* Charcoal */
+.stitch-dark-brown { background-color: #654321; } /* Dark Brown */
+.stitch-grape-crush { background-color: #6F2DA8; } /* Grape Crush */
+.stitch-grey { background-color: #808080; } /* Grey */
+.stitch-green { background-color: #008000; } /* Green */
+.stitch-light-green { background-color: #90EE90; } /* Light Green */
+.stitch-light-purple { background-color: #D8BFD8; } /* Light Purple */
+.stitch-marron { background-color: #800000; } /* Maroon */
+.stitch-orange { background-color: #FFA500; } /* Orange */
+.stitch-pink { background-color: #FFC0CB; } /* Pink */
+.stitch-purple { background-color: #800080; } /* Purple */
+.stitch-sand { background-color: #F4A460; } /* Sand */
+.stitch-yellow { background-color: #FFFF00; }  
+
+.cotton-black { background-color: #000; }
+.cotton-blue-iris { background-color: #5a5db8; }
+.cotton-blue { background-color: #007FFF; }
+.cotton-cotton-candy { background-color: #FFB7C5; }
+.cotton-cream { background-color: #FFFDD0; }
+.cotton-green { background-color: #3CB371; }
+.cotton-grey { background-color: #D3D3D3; }
+.cotton-light-purple { background-color: #C9A0DC; }
+.cotton-red { background-color: #FF6347; }
+.cotton-sea { background-color: #00CED1; }
+.cotton-whiite { background-color: #FFFFFF; }
+.cotton-yellow { background-color: #FFFF66; }
+
+/*hooks*/
+
+
+
+/* Hover Effects for Image Change */
+/* .color:hover ~ .yarn-display .yarn-image { display: none; } /* Hide all images on hover */
+#color-black:hover ~ .yarn-display .default { display: block; } /* Default image */
+#color-bright-pink:hover ~ .yarn-display .color-bright-pink { display: block; }
+#color-bubblegum:hover ~ .yarn-display .color-bubblegum { display: block; }
+#color-cotton-candy:hover ~ .yarn-display .color-cotton-candy { display: block; }
+#color-cream:hover ~ .yarn-display .color-cream { display: block; }
+#color-light-blue:hover ~ .yarn-display .color-light-blue { display: block; }
+#color-light-purple:hover ~ .yarn-display .color-light-purple { display: block; }
+#color-light-yellow:hover ~ .yarn-display .color-light-yellow { display: block; }
+#color-mango:hover ~ .yarn-display .color-mango { display: block; }
+#color-mint:hover ~ .yarn-display .color-mint { display: block; }
+#color-seaside:hover ~ .yarn-display .color-seaside { display: block; }
+#color-sunshine:hover ~ .yarn-display .color-sunshine { display: block; }
+#color-tang:hover ~ .yarn-display .color-tang { display: block; }
+#color-very-berry:hover ~ .yarn-display .color-very-berry { display: block; }
+#color-white:hover ~ .yarn-display .color-white { display: block; } 
+
+#yarn-black:hover ~  .yarn-display .default { display: block; }
+#yarn-blue:hover ~  .yarn-display .default { display: block; }
+
+/* Color selector styling */
+.color-options {
+    display: flex;
+    flex-direction: column; /* Stack the color options vertically */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.color-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow colors to wrap */
+    gap: 10px; /* Space between colors */
+    max-width: 400px; /* Set a maximum width */
+}
+
+.color {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #ddd;
+}
+
+.color:hover {
+    border-color: #000;
+}
+
+/* Quantity selector styling */
+.quantity-selector {
+    margin-top: 20px;
+}
+
+.quantity-selector label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.quantity-selector input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Button styling */
+.action-buttons {
+    margin-top: 20px;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    height: 50px;
+}
+
+
+.footer-div {
+    margin: auto;
+}
+
+/* Button styling */
+
+/* Styling for Add to Cart button */
+.add-to-cart {
+    background-color: #FF69B4; /* Tomato red */
+    color: white; /* White text for contrast */
+    padding: 10px 20px; /* Space inside the button */
+    font-size: 16px; /* Text size */
+    font-weight: bold;
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth color and scaling effect */
+}
+
+/* Hover effect for Add to Cart button */
+.add-to-cart:hover {
+    background-color:  #FF69B4; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scaling */
+}
+
+.quantity-button {
+    background-color: #FFC0CB; /* Light pink background */
+    border: none;
+    color: #fff; /* White text color for contrast */
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for quantity selector buttons */
+.quantity-button:hover {
+    background-color: #FF69B4; /* Darker pink on hover */
+}
+
+/* Soft pastel blue for more info
+.more-info {
+    background-color: #ff9aa2; 
+    color: white;
+}
+
+.more-info:hover {
+    background-color: #ff7d8a; 
+    transform: scale(1.05); 
+} */
+
+
+/* Product Details Styling */
+.product-details {
+    background-color: #ffffff; /* White background for contrast */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 400px; /* Limit width */
+    margin-top: 20px; /* Space above */
+}
+
+.product-details h3 {
+    font-size: 24px; /* Larger font size for the heading */
+    margin-bottom: 15px; /* Space below heading */
+    color: #ff7f9c; /* Soft pastel pink color for the heading */
+    text-align: center; /* Center the heading */
+}
+
+/* Table Styling */
+.product-details table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Remove default spacing */
+    margin-top: 15px; /* Space above the table */
+    border: none; /* Remove table borders */
+}
+
+.product-details td {
+    padding: 10px; /* Padding inside table cells */
+    background-color: #f9f9f9; /* Light gray background for cells */
+    border: none; /* Remove borders from table cells */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.product-details td:nth-child(1) {
+    font-weight: bold; /* Make the first column bold */
+}
+
+.product-details td:hover {
+    background-color: #ffcad4; /* Change background on hover */
+}
+
+
+h3{
+    text-align: center;
+}
+
+/* Styles for Individual and Set Pricing sections */
+.individual-pricing, .set-pricing {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 90%;
+    max-width: 300px;
+}
+
+/* Headers for pricing sections */
+.individual-pricing h4, .set-pricing h4 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff66b2; /* Pink underline */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Individual hook prices list */
+.individual-pricing p {
+    font-size: 1em;
+    color: #666;
+    margin: 5px 0;
+    padding-left: 10px;
+}
+
+/* Set pricing styling */
+.set-pricing p {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #444;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+/* Quantity selector input styles */
+.quantity-selector label {
+    font-size: 0.9em;
+    color: #333;
+    margin-right: 10px;
+}
+
+.quantity-selector input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    margin: 5px 0;
+    font-size: 0.9em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+/* Style for pricing tables */
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.pricing-table th, .pricing-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.pricing-table th {
+    background-color: #ffafd6; /* Pink background for header */
+    color: white;
+    font-weight: bold;
+}
+
+.pricing-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.pricing-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Table headers for better readability */
+.pricing-table th {
+    font-size: 1em;
+    text-transform: capitalize;
+}
+
+/*Quantity Selector for Each Hook*/
+.action-buttons {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.purchase-options {
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.purchase-type {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+.quantity-section {
+    margin-bottom: 20px;
+}
+
+.quantity-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds space between inputs */
+}
+
+input[type="number"], select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+

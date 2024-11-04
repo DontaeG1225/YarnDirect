@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Winder - YarnDirect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/Yarn Direct Slogan Logo No BG.png">
+    <link rel="stylesheet" href="chunky.css">
+    <style>
+        .ball-winder-display img {
+            width: 300px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body id="ball-winder-page">
+
+<nav>
+    <a href="home.html"><img src="img/Yarn Direct Slogan Logo No BG.png" alt="Logo" class="nav-logo"></a>
+    <ul>
+        <li><a href="home.html">Home</a></li>       
+        <li><a href="products.html">Products</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+</nav>
+
+<main>
+   
+    <section class="product-detail">
+        <!-- Ball Winder Display -->
+        <div class="product-container">
+            <div class="ball-winder-display">                    
+                <div id="ball-winder-page">
+                    <div class="ball-winder-slide active">
+                        <img src="img/other/Ball Winder.jpg" alt="Ball Winder">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Price Details -->
+            <div class="product-details">
+                <h3>Product Details</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Color:</td>
+                            <td>Blue (standard)</td>
+                        </tr>
+                        <tr>
+                            <td>Material:</td>
+                            <td>Plastic with Metal Components</td>
+                        </tr>
+                        <tr>
+                            <td>Dimensions:</td>
+                            <td>10" x 10" x 8"</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Price Details</h3>
+                <!-- Pricing Table -->
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Standard Ball Winder</td>
+                            <td>$29.99</td>
+                        </tr>
+                        <tr>
+                            <td>Deluxe Ball Winder</td>
+                            <td>$39.99</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                
+            <!-- Quantity Selector -->
+            <div class="action-buttons">
+                <div class="purchase-options">
+                    <h3>Select Quantity</h3>
+                    <form>
+                        <label for="model-selection">Choose Model:</label>
+                        <select id="model-selection">
+                            <option value="standard">Standard Ball Winder</option>
+                            <option value="deluxe">Deluxe Ball Winder</option>
+                        </select>
+                        <label for="ball-winder-quantity-input">Quantity:</label>
+                        <input type="number" id="ball-winder-quantity-input" name="ball-winder-quantity" min="0" value="0">
+                        
+                        <!-- Add to Cart Button -->
+                        <button type="submit" class="add-to-cart">Add Selected to Cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Yarn Direct | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
