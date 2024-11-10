@@ -610,7 +610,7 @@ textarea {
 
 .contact-section h1, 
 .contact-section h2 {
-    color: #333;
+    color: #FF69B4;
     margin-bottom: 15px;
     text-align: center;
 }
@@ -776,13 +776,100 @@ header {
 }
 
 .about-section ul li {
-    padding: 8px 0;
+    padding: 12px 0; /* Increased padding for better spacing */
     border-bottom: 1px solid #ddd;
+    margin-bottom: 10px; /* Added margin between list items */
 }
+
 .about-section li {
     color: #333;
 }
 
 .about-section ul li strong {
     color: #333;
+}
+
+/* Founders Section Styling */
+.founders-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    gap: 20px; /* Space between the founder sections */
+    justify-content: center; /* Center the items */
+    margin-bottom: 20px;
+}
+
+.founder {
+    flex: 1 1 250px; /* Makes each founder section flexible, with a minimum width of 250px */
+    background-color: #f9f9f9; /* Light background for each founder block */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.founder strong {
+    display: block;
+    margin-bottom: 10px; /* Adds space between the name and role */
+    color: #FF69B4; /* Highlight the name */
+}
+
+/* Styling for Why Choose Us section */
+.choose-us-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.choose-us-item {
+    flex: 1 1 250px; /* Allows items to flex and wrap */
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for Our Values section */
+.values-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.values-item {
+    flex: 1 1 250px; /* Flexbox layout with minimum width */
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for The 4Ps section */
+.four-ps-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.four-ps-item {
+    flex: 1 1 250px; /* Flexible items with a minimum width */
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text styling for each section */
+.choose-us-item, .values-item, .four-ps-item {
+    color: #333;
+}
+
+.choose-us-item strong, .values-item strong, .four-ps-item strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #FF69B4; /* Highlight the titles */
 }
