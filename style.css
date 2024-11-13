@@ -376,20 +376,20 @@ nav, header, footer {
 }
 
 .product {
-    width: 180px; /* Fixed width for uniformity */
-    height: 280px; /* Fixed height for container */
+    width: 180px; 
+    height: 280px; 
     text-align: center;
     transition: transform 0.3s ease;
     flex: 0 0 200px; 
     margin: 0;
     padding: 10px;
-    background-color: #FFE3E3; /* No change to background color */
+    background-color: #FFE3E3; 
 }
 
 .product img {
     width: 100%;
-    height: 180px; /* Fixed height for images */
-    object-fit: cover; /* Ensures images cover the space uniformly */
+    height: 180px; 
+    object-fit: cover; 
     border-radius: 8px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -400,10 +400,10 @@ nav, header, footer {
 }
 
 .product h3 {
-    font-family: 'quicksand medium'; /* No change to font family */
+    font-family: 'quicksand medium'; 
     margin-top: 10px;
-    font-size: 1.1em; /* No change to font size */
-    color: inherit; /* Retains the existing color */
+    font-size: 1.1em; 
+    color: inherit;
 }
 
 
@@ -414,7 +414,7 @@ nav, header, footer {
 
 .checkout-page {
     max-width: 600px;
-    margin: 2rem auto; /* Center the section */
+    margin: 2rem auto; 
     padding: 2rem;
     background-color: white;
     border-radius: 8px;
@@ -506,17 +506,17 @@ nav ul li {
 
 .yarn-display {
     flex: 1;
-    min-width: 300px; /* Minimum width for the yarn display */
+    min-width: 300px; 
 }
 
 .color-options {
     flex: 1;
-    min-width: 200px; /* Minimum width for the color options */
+    min-width: 200px; 
 }
 
 .product-details {
     flex: 1;
-    min-width: 300px; /* Minimum width for product details */
+    min-width: 300px; 
 }
 
 .price, .action-buttons {
@@ -527,33 +527,32 @@ nav ul li {
 
 /* Responsive images */
 .yarn-image {
-    max-width: 100%; /* Ensure images scale down */
-    height: auto; /* Maintain aspect ratio */
-}
+    max-width: 100%; 
+    height: auto;}
 
 /* Media Queries for smaller screens */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Stack navigation items */
+        flex-direction: column; 
         align-items: center;
     }
 
     .product-container {
-        flex-direction: column; /* Stack product details */
+        flex-direction: column; 
     }
 
     .color-options {
-        margin-top: 20px; /* Space between sections */
+        margin-top: 20px; 
     }
 
     .action-buttons {
-        flex-direction: column; /* Stack action buttons */
+        flex-direction: column; 
     }
 }
 
 @media (max-width: 480px) {
     nav ul li {
-        margin: 5px 0; /* Reduce margin for smaller screens */
+        margin: 5px 0; 
     }
 }
 
@@ -670,8 +669,6 @@ textarea {
 }
 
 
-
-/*reviews page*/
 /* Reviews Page Styles */
 /* Centered Feedback Heading */
 .feedback-heading {
@@ -785,9 +782,9 @@ textarea {
 }
 
 .about-section ul li {
-    padding: 12px 0; /* Increased padding for better spacing */
+    padding: 12px 0; 
     border-bottom: 1px solid #ddd;
-    margin-bottom: 10px; /* Added margin between list items */
+    margin-bottom: 10px; 
 }
 
 .about-section li {
@@ -801,15 +798,15 @@ textarea {
 /* Founders Section Styling */
 .founders-list {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
-    gap: 20px; /* Space between the founder sections */
-    justify-content: center; /* Center the items */
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
     margin-bottom: 20px;
 }
 
 .founder {
-    flex: 1 1 250px; /* Makes each founder section flexible, with a minimum width of 250px */
-    background-color: #f9f9f9; /* Light background for each founder block */
+    flex: 1 1 250px; 
+    background-color: #f9f9f9; 
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
@@ -817,8 +814,8 @@ textarea {
 
 .founder strong {
     display: block;
-    margin-bottom: 10px; /* Adds space between the name and role */
-    color: #FF69B4; /* Highlight the name */
+    margin-bottom: 10px; 
+    color: #FF69B4; 
 }
 
 /* Styling for Why Choose Us section */
@@ -831,7 +828,7 @@ textarea {
 }
 
 .choose-us-item {
-    flex: 1 1 250px; /* Allows items to flex and wrap */
+    flex: 1 1 250px; 
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 10px;
@@ -865,7 +862,7 @@ textarea {
 }
 
 .four-ps-item {
-    flex: 1 1 250px; /* Flexible items with a minimum width */
+    flex: 1 1 250px; 
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 10px;
@@ -880,5 +877,5 @@ textarea {
 .choose-us-item strong, .values-item strong, .four-ps-item strong {
     display: block;
     margin-bottom: 10px;
-    color: #FF69B4; /* Highlight the titles */
+    color: #FF69B4; 
 }
