@@ -673,40 +673,49 @@ textarea {
 
 /*reviews page*/
 /* Reviews Page Styles */
-header {
+/* Centered Feedback Heading */
+.feedback-heading {
     text-align: center;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
-.reviews-section {
+/* Flexbox Layout for Reviews */
+.reviews-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #F9F9F9;
-    margin: 20px;
-    border-radius: 8px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
+/* Review Card Styles */
 .review-card {
-    width: 80%;
-    max-width: 500px;
+    flex: 1 1 300px;
+    max-width: 300px;
     background-color: #FFF;
     padding: 15px;
-    margin: 10px 0;
     border: 1px solid #E0E0E0;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Review Card Content */
 .review-card h3 {
     font-family: 'quicksand medium';
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .review-card p {
-    margin: 5px 0;
+    margin: 10px 0;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reviews-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 .review-form-section {
     padding: 20px;
