@@ -856,6 +856,7 @@ textarea {
     gap: 20px; 
     justify-content: center; 
     margin-bottom: 20px;
+    font-size: 16px;
 }
 
 .founder {
@@ -864,6 +865,7 @@ textarea {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
 }
 
 .founder strong {
@@ -887,6 +889,7 @@ textarea {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
 }
 
 /* Styling for Our Values section */
@@ -913,6 +916,7 @@ textarea {
     gap: 20px;
     justify-content: center;
     margin-bottom: 20px;
+    font-size: 16px;
 }
 
 .four-ps-item {
@@ -921,6 +925,7 @@ textarea {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
 }
 
 /* Text styling for each section */
@@ -934,3 +939,25 @@ textarea {
     color: #FF69B4; 
 }
 
+.about-section {
+    font-size: 1.1rem; 
+    font-family: 'quicksand';
+}
+
+.choose-us-list,
+.values-list,
+.founders-list,
+.four-ps-list {
+    font-size: 1.1rem; 
+    line-height: 1.8; 
+    font-family: 'quicksand medium' ;
+}
+
+.product-detail,
+.price-detail,
+.place-detail,
+.promotion-detail {
+    font-size: 1.05rem; 
+    margin-top: 10px;
+    font-family: 'quicksand medium' ;
+}
