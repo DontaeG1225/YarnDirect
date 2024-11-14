@@ -21,6 +21,60 @@ body {
 
 }
 
+/* Font Size Adjustment Controls */
+.font-size-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.font-size-controls label {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+}
+
+.font-size-select {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.font-size-select:hover {
+    border-color: #888;
+}
+
+/* Font Size Options */
+body.small-font {
+    font-size: 16px;
+}
+
+body.large-font {
+    font-size: 36px;
+}
+
+body.xlarge-font {
+    font-size: 86px;
+}
+
+
+body {
+    line-height: 1.6;
+}
+
+
 .container {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
@@ -376,20 +430,20 @@ nav, header, footer {
 }
 
 .product {
-    width: 180px; /* Fixed width for uniformity */
-    height: 280px; /* Fixed height for container */
+    width: 180px; 
+    height: 280px; 
     text-align: center;
     transition: transform 0.3s ease;
     flex: 0 0 200px; 
     margin: 0;
     padding: 10px;
-    background-color: #FFE3E3; /* No change to background color */
+    background-color: #FFE3E3; 
 }
 
 .product img {
     width: 100%;
-    height: 180px; /* Fixed height for images */
-    object-fit: cover; /* Ensures images cover the space uniformly */
+    height: 180px; 
+    object-fit: cover; 
     border-radius: 8px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -400,10 +454,10 @@ nav, header, footer {
 }
 
 .product h3 {
-    font-family: 'quicksand medium'; /* No change to font family */
+    font-family: 'quicksand medium'; 
     margin-top: 10px;
-    font-size: 1.1em; /* No change to font size */
-    color: inherit; /* Retains the existing color */
+    font-size: 1.1em; 
+    color: inherit;
 }
 
 
@@ -414,7 +468,7 @@ nav, header, footer {
 
 .checkout-page {
     max-width: 600px;
-    margin: 2rem auto; /* Center the section */
+    margin: 2rem auto; 
     padding: 2rem;
     background-color: white;
     border-radius: 8px;
@@ -506,17 +560,17 @@ nav ul li {
 
 .yarn-display {
     flex: 1;
-    min-width: 300px; /* Minimum width for the yarn display */
+    min-width: 300px; 
 }
 
 .color-options {
     flex: 1;
-    min-width: 200px; /* Minimum width for the color options */
+    min-width: 200px; 
 }
 
 .product-details {
     flex: 1;
-    min-width: 300px; /* Minimum width for product details */
+    min-width: 300px; 
 }
 
 .price, .action-buttons {
@@ -527,33 +581,32 @@ nav ul li {
 
 /* Responsive images */
 .yarn-image {
-    max-width: 100%; /* Ensure images scale down */
-    height: auto; /* Maintain aspect ratio */
-}
+    max-width: 100%; 
+    height: auto;}
 
 /* Media Queries for smaller screens */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Stack navigation items */
+        flex-direction: column; 
         align-items: center;
     }
 
     .product-container {
-        flex-direction: column; /* Stack product details */
+        flex-direction: column; 
     }
 
     .color-options {
-        margin-top: 20px; /* Space between sections */
+        margin-top: 20px; 
     }
 
     .action-buttons {
-        flex-direction: column; /* Stack action buttons */
+        flex-direction: column; 
     }
 }
 
 @media (max-width: 480px) {
     nav ul li {
-        margin: 5px 0; /* Reduce margin for smaller screens */
+        margin: 5px 0; 
     }
 }
 
@@ -610,7 +663,7 @@ textarea {
 
 .contact-section h1, 
 .contact-section h2 {
-    color: #333;
+    color: #FF69B4;
     margin-bottom: 15px;
     text-align: center;
 }
@@ -670,43 +723,50 @@ textarea {
 }
 
 
-
-/*reviews page*/
 /* Reviews Page Styles */
-header {
+/* Centered Feedback Heading */
+.feedback-heading {
     text-align: center;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
-.reviews-section {
+/* Flexbox Layout for Reviews */
+.reviews-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #F9F9F9;
-    margin: 20px;
-    border-radius: 8px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
+/* Review Card Styles */
 .review-card {
-    width: 80%;
-    max-width: 500px;
+    flex: 1 1 300px;
+    max-width: 300px;
     background-color: #FFF;
     padding: 15px;
-    margin: 10px 0;
     border: 1px solid #E0E0E0;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Review Card Content */
 .review-card h3 {
     font-family: 'quicksand medium';
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .review-card p {
-    margin: 5px 0;
+    margin: 10px 0;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reviews-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 .review-form-section {
     padding: 20px;
@@ -776,13 +836,128 @@ header {
 }
 
 .about-section ul li {
-    padding: 8px 0;
+    padding: 12px 0; 
     border-bottom: 1px solid #ddd;
+    margin-bottom: 10px; 
 }
+
 .about-section li {
     color: #333;
 }
 
 .about-section ul li strong {
     color: #333;
+}
+
+/* Founders Section Styling */
+.founders-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.founder {
+    flex: 1 1 250px; 
+    background-color: #f9f9f9; 
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.founder strong {
+    display: block;
+    margin-bottom: 10px; 
+    color: #FF69B4; 
+}
+
+/* Styling for Why Choose Us section */
+.choose-us-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.choose-us-item {
+    flex: 1 1 250px; 
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+/* Styling for Our Values section */
+.values-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.values-item {
+    flex: 1 1 250px; /* Flexbox layout with minimum width */
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for The 4Ps section */
+.four-ps-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.four-ps-item {
+    flex: 1 1 250px; 
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+/* Text styling for each section */
+.choose-us-item, .values-item, .four-ps-item {
+    color: #333;
+}
+
+.choose-us-item strong, .values-item strong, .four-ps-item strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #FF69B4; 
+}
+
+.about-section {
+    font-size: 1.1rem; 
+    font-family: 'quicksand';
+}
+
+.choose-us-list,
+.values-list,
+.founders-list,
+.four-ps-list {
+    font-size: 1.1rem; 
+    line-height: 1.8; 
+    font-family: 'quicksand medium' ;
+}
+
+.product-detail,
+.price-detail,
+.place-detail,
+.promotion-detail {
+    font-size: 1.05rem; 
+    margin-top: 10px;
+    font-family: 'quicksand medium' ;
 }
